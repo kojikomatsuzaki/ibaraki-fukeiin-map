@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/"
-CONTENT_UPDATED = "2026-10-05"  # Change only when the published page content changes.
+CONTENT_UPDATED = "2026-10-06"  # Change only when the published page content changes.
 REGIONS = [("県北", "kenpoku"), ("県央", "keno"), ("鹿行", "rokko"), ("県南", "kennan"), ("県西", "kensei")]
 data = json.loads((ROOT / "data.json").read_text())
 records = data["records"]
@@ -60,7 +60,7 @@ page = f'''<!doctype html>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../directory.css?v=1.0.0"></head>
 <body><header class="guide-header"><a class="guide-brand" href="../">〒 茨城 風景印地図</a><a class="back-map" href="../">地図で探す →</a></header>
 <main class="directory"><div class="intro"><p class="eyebrow">IBARAKI STAMP DIRECTORY</p><h1>茨城県の風景印・郵便局一覧</h1>
-<p>茨城の風景や名所を描いた、小さな郵便の印。日本郵便の公式一覧に掲載された{total_offices}局・{len(records)}件の風景印を、5つの地域に分けて紹介します。画像や紹介リンクから各郵便局の公式ページを開けます。</p>
+<p>日本郵便の公式一覧に掲載された{total_offices}局・{len(records)}件の風景印を、5つの地域に分けて紹介します。画像や紹介リンクから各郵便局の公式ページを開けます。</p>
 <p><a href="../">風景印地図</a>では、郵便局の位置を見ながら名前や地域で検索できます。通常表示は{active_offices}局・{len(active)}件。本一覧は廃止・一時閉鎖や旧図案も含めて掲載しています。</p>
 <p class="data-date">データ確認日：{escape(data['verifiedAt'])} ／ 日本郵便の公式サイトではない、個人による案内地図です。</p></div>
 <nav class="region-nav" aria-label="地域別の郵便局一覧">{navigation}</nav>
