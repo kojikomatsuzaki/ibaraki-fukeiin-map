@@ -2,6 +2,8 @@
 
 サイト側には正規URL・ページ説明・サイトマップを設定し、JavaScriptなしで読める郵便局一覧を用意しています。Googleへの送信はまだ行っていません。
 
+2026-10-06：管理者から提供された所有権確認用のHTMLタグをトップページに追加しました。Search Consoleでの「確認」、サイトマップ送信、インデックス登録リクエストは未確認です。確認タグは所有権の維持に必要なため、今後の更新でも残してください。
+
 ## Google Search Console
 
 1. [Search Console](https://search.google.com/search-console/)を、サイトを管理するGoogleアカウントで開きます。
