@@ -1,5 +1,7 @@
 # 茨城 風景印地図
 
+[公開サイト](https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/) · [郵便局一覧](https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/post-offices/) · [リリース](https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map/releases) · [更新履歴](CHANGELOG.md)
+
 茨城県の郵便局にある風景印を、実際の風景印画像で探せる非公式の案内地図です。地図上の画像をクリックすると、日本郵便の各風景印紹介ページが開きます。
 
 ## 使い方
@@ -29,6 +31,8 @@ HTML・CSS・JavaScriptによる静的サイトです。GitHub Pagesでは`main`
 - `vendor/`：Leaflet 1.9.4
 
 変更を`main`に反映すると、GitHub Pagesが更新されます。背景地図には国土地理院のオンライン地図を使用しています。
+
+`data.json`を更新する際は、`python3 scripts/build_directory.py` で郵便局一覧とサイトマップを再生成し、生成ファイルもコミットします。Pythonは更新作業時のみ必要で、閲覧・配信には不要です。検索エンジンへの登録は[Googleへの登録手順](SEARCH_INDEXING.md)を参照してください。
 
 ## 出典・権利表記
 
