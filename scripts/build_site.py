@@ -18,6 +18,7 @@ import shutil
 from pathlib import Path
 from typing import Any
 from xml.sax.saxutils import escape as xml_escape
+from urllib.parse import urlencode, urljoin
 
 
 OFFICIAL_DETAIL_RE = re.compile(r"^https://www\.post\.japanpost\.jp/", re.I)
@@ -44,6 +45,9 @@ CSV_FIELDS = [
     ("coordinatePrecision", "位置精度"),
     ("coordinatesApproximate", "概算位置"),
     ("coordinateNote", "位置注記"),
+    ("coordinateSourceUrl", "位置の出典URL"),
+    ("description", "図案説明"),
+    ("dateWarning", "日付注記"),
     ("detailUrl", "日本郵便紹介URL"),
     ("imageUrl", "画像URL"),
     ("verifiedAt", "確認日"),
@@ -74,8 +78,8 @@ def _finite_number(value: Any, label: str) -> float:
 
 
 def _validate_site_config(config: dict[str, Any]) -> None:
-    if config.get("version") != "2.0.0":
-        raise ValueError("source/site.json version must be 2.0.0")
+    if not re.fullmatch(r"\d+\.\d+\.\d+", str(config.get("version", ""))):
+        raise ValueError("site version must use major.minor.patch")
     for key in ("title", "prefecture", "pageTitle", "description", "canonicalUrl", "repositoryUrl"):
         if not isinstance(config.get(key), str) or not config[key]:
             raise ValueError(f"site config requires non-empty {key}")
@@ -156,6 +160,8 @@ def _validate_catalog(catalog: dict[str, Any], root: Path, config: dict[str, Any
         image = stamp.get("image")
         if not isinstance(image, str) or not image.startswith("assets/"):
             raise ValueError(f"stamp {stamp_id} image must be under assets/")
+        if not (root / image).resolve().is_relative_to((root / "assets").resolve()):
+            raise ValueError(f"stamp {stamp_id} image escapes assets/")
         if not (root / image).is_file():
             raise ValueError(f"stamp {stamp_id} image does not exist: {image}")
         detail_url = stamp.get("detailUrl")
@@ -173,16 +179,19 @@ def _validate_catalog(catalog: dict[str, Any], root: Path, config: dict[str, Any
         lng = _finite_number(stamp.get("lng"), f"stamp {stamp_id}.lng")
         if not (-90 <= lat <= 90 and -180 <= lng <= 180):
             raise ValueError(f"stamp {stamp_id} coordinates are out of range")
+        if any(key in stamp for key in ("name", "city", "region")):
+            raise ValueError(f"stamp {stamp_id}: office name, city and region belong in offices")
         record = dict(stamp)
         office = office_by_id[office_id]
         record.update(name=office["name"], city=office["city"], region=office["region"])
         record["stampId"] = stamp_id
-        record["imageUrl"] = stamp["image"]
+        record["imageUrl"] = urljoin(config["canonicalUrl"], stamp["image"])
         record["verifiedAt"] = catalog["verifiedAt"]
         record["displayStatus"] = _display_status(stamp)
         record["status"] = record["displayStatus"] or "現行"
-        record["displayAddress"] = stamp.get("currentAddress") or stamp.get("address") or "住所未確認"
-        record["addressLabel"] = record["displayAddress"]
+        record["displayAddress"] = (stamp.get("address") if stamp.get("coordinateBasis") == "historical-office-location" else stamp.get("currentAddress") or stamp.get("address")) or "住所未確認"
+        record["addressLabel"] = "旧所在地" if stamp.get("coordinateBasis") == "historical-office-location" else "現在の所在地"
+        record["searchText"] = " ".join(str(value or "") for value in (record["name"], record["city"], stamp.get("address"), stamp.get("currentAddress")))
         record["locationLabel"] = "概算位置" if stamp["coordinatesApproximate"] else "位置確認済み"
         records.append(record)
     if referenced_offices != office_ids:
@@ -257,32 +266,48 @@ def _csv_bytes(records: list[dict[str, Any]]) -> bytes:
     return ("\ufeff" + stream.getvalue()).encode("utf-8")
 
 
-def _directory_rows(records: list[dict[str, Any]]) -> str:
-    rows: list[str] = []
+def _address_notes(record: dict[str, Any]) -> str:
+    pieces = [f'{record["addressLabel"]}：{record["displayAddress"]}', record["status"]]
+    if record["coordinateBasis"] == "current-office-location" and record.get("address") != record.get("currentAddress"):
+        pieces.append("風景印紹介の住所：" + str(record.get("address") or "未確認"))
+    if record["coordinatesApproximate"]:
+        pieces.append("概算位置")
+    if record.get("coordinateNote"):
+        pieces.append(record["coordinateNote"])
+    if record.get("dateWarning"):
+        pieces.append(record["dateWarning"])
+    return "<br>".join(html.escape(piece) for piece in pieces)
+
+
+def _table_rows(records: list[dict[str, Any]], with_images: bool) -> str:
+    rows = []
     for record in records:
-        classes = "historical" if record["historical"] else ""
-        status = html.escape(record["status"])
-        rows.append(
-            f'<tr class="{classes}" data-region="{html.escape(record["region"])}" data-status="{html.escape(record["status"])}">'
-            f'<td><img src="../{html.escape(record["image"])}" alt="{html.escape(record["name"])}の風景印" loading="lazy"></td>'
-            f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener">{html.escape(record["name"])}</a><small>{html.escape(record["city"])} / {html.escape(record["region"])}</small></td>'
-            f'<td>{html.escape(record["displayAddress"])}<small>{status}</small></td>'
-            f'<td><a class="map-link" href="../?q={html.escape(record["name"], quote=True)}">地図で見る</a></td></tr>'
-        )
+        status_class = "historical" if record["historical"] else ""
+        parameters = {"q": record["name"]}
+        if record["historical"]:
+            parameters["history"] = "true"
+        map_url = "../?" + urlencode(parameters)
+        row = f'<tr class="{status_class}" data-region="{html.escape(record["region"])}" data-historical="{str(record["historical"]).lower()}" data-search="{html.escape(record["searchText"], quote=True)}">'
+        if with_images:
+            row += f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener noreferrer"><img src="../{html.escape(record["image"])}" alt="{html.escape(record["name"])}の風景印" loading="lazy" width="58" height="58"></a></td>'
+        row += f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(record["name"])}</a><small>{html.escape(record["city"])} / {html.escape(record["region"])} · 印ID {html.escape(record["id"])}</small></td>'
+        row += '<td class="address-notes">' + _address_notes(record) + '</td>'
+        row += f'<td><a class="map-link" href="{html.escape(map_url, quote=True)}">地図で見る</a></td></tr>'
+        rows.append(row)
     return "\n".join(rows)
 
 
-def _print_rows(records: list[dict[str, Any]]) -> str:
-    rows: list[str] = []
-    for record in records:
-        classes = "historical" if record["historical"] else ""
-        rows.append(
-            f'<tr class="{classes}" data-region="{html.escape(record["region"])}" data-historical="{str(record["historical"]).lower()}">'
-            f'<td>{html.escape(record["name"])}</td><td>{html.escape(record["city"])}</td><td>{html.escape(record["region"])}</td>'
-            f'<td>{html.escape(record["displayAddress"])}<br><small>{html.escape(record["status"])}</small></td>'
-            f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener">紹介</a></td></tr>'
-        )
-    return "\n".join(rows)
+def _source_revision(root: Path, config: dict, catalog: dict) -> str:
+    inputs = {"site": config, "catalog": catalog}
+    # Hash code and factual assets as well as data. Targets share these inputs.
+    inputs["builder"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    inputs["files"] = {
+        str(path.relative_to(root)): hashlib.sha256(path.read_bytes()).hexdigest()
+        for folder in ("source/web", "assets", "vendor")
+        for path in sorted((root / folder).rglob("*"))
+        if path.is_file() and not path.name.startswith(".")
+    }
+    return _digest(inputs)
 
 
 def _index_values(config: dict[str, Any], catalog: dict[str, Any], records: list[dict[str, Any]], target: str, source_revision: str, data_revision: str) -> dict[str, str]:
@@ -326,6 +351,8 @@ def _config_js(config: dict[str, Any], catalog: dict[str, Any], records: list[di
     value = {
         "version": config["version"], "target": target, "canonicalUrl": config["canonicalUrl"],
         "targetUrl": config["targets"].get(target, config["targets"]["github"])["url"],
+        "regions": [region["name"] for region in config["regions"]],
+        "boundaryAsset": config["boundaryAsset"],
         "bounds": config["bounds"], "tileUrl": config["tileUrl"], "tileAttribution": config["tileAttribution"],
         "sourceUrl": catalog["sourceUrl"], "verifiedAt": catalog["verifiedAt"], "contentUpdated": config["contentUpdated"],
         "sourceRevision": source_revision, "dataRevision": data_revision, "counts": counts,
@@ -371,45 +398,25 @@ def build(root: Path | str, output: Path | str, target: str = "github") -> dict[
     config, catalog, records = load_catalog(root)
     if target not in config["targets"]:
         raise ValueError(f"unknown build target: {target}")
-    source_revision = _digest({"site": config, "catalog": catalog})
+    source_revision = _source_revision(root, config, catalog)
     data_revision = _digest(records)
     output.mkdir(parents=True, exist_ok=True)
-    for relative in ("index.html", "app.js", "data.json", "config.js", "catalog-view.js", "style.css", "directory.css", "print.css", "print.js", "post-offices", "print", "exports", "release.json", "sitemap.xml", ".nojekyll"):
-        path = output / relative
-        if path.is_dir():
-            shutil.rmtree(path)
-        elif path.exists():
-            path.unlink()
     _copy_public_assets(root, output)
     template = (root / "source/web/index.html").read_text(encoding="utf-8")
     _write(output / "index.html", _render_tokens(template, _index_values(config, catalog, records, target, source_revision, data_revision)))
-    for filename in ("app.js", "style.css", "directory.css"):
+    for filename in ("app.js", "style.css", "directory.css", "catalog-view.js", "print.css", "print.js"):
         _write(output / filename, (root / "source/web" / filename).read_bytes())
     _write(output / "config.js", _config_js(config, catalog, records, target, source_revision, data_revision))
-    _write(output / "catalog-view.js", r"""(function(){
-  const cfg=window.ATLAS_CONFIG||{};
-  const fields=cfg.csvFields||[];
-  const text=value=>value===null||value===undefined?'':value===true?'true':value===false?'false':String(value);
-  const csvCell=value=>{let s=text(value);if(/^[=+\-@\t\r]/.test(s))s="'"+s;return /[",\r\n]/.test(s)?'"'+s.replaceAll('"','""')+'"':s;};
-  const csvText=records=>'\ufeff'+[fields.map(field=>csvCell(field[1])).join(','),...records.map(record=>fields.map(field=>csvCell(record[field[0]])).join(','))].join('\r\n')+'\r\n';
-  const downloadCsv=(records,name='ibaraki-fukeiin.csv')=>{const blob=new Blob([csvText(records)],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-  const params=values=>new URLSearchParams(Object.entries(values).filter(([,value])=>value&&value!=='all')).toString();
-  window.AtlasData={csvText,downloadCsv,params};
-})();
-""")
     _write(output / "data.json", _data_json(config, catalog, records, source_revision, data_revision))
     _write(output / "exports/stamps.csv", _csv_bytes(records))
     region_options = "".join(f'<option value="{html.escape(region["name"])}">{html.escape(region["name"])}</option>' for region in config["regions"])
-    directory_template = r"""<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>茨城県の風景印・郵便局一覧｜茨城 風景印地図</title><meta name="description" content="茨城県の風景印224件を郵便局名・地域・住所で一覧できます。"><link rel="canonical" href="{{CANONICAL_URL}}post-offices/"><link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="../directory.css"></head><body><header class="directory-header"><a href="../">← 地図へ戻る</a><p class="eyebrow">IBARAKI STAMP ATLAS</p><h1>茨城県の風景印・郵便局一覧</h1><p>{{COVERAGE}}。風景印画像は日本郵便の公式紹介ページへリンクしています。</p><nav><a href="../exports/stamps.csv">CSVをダウンロード</a><a href="../print/">印刷用リスト</a></nav></header><main class="directory-main"><div class="directory-tools"><label>検索 <input id="directory-search" type="search" placeholder="郵便局名・市町村・住所"></label><label>地域 <select id="directory-region"><option value="all">全地域</option>{{REGION_OPTIONS}}</select></label><label class="history-toggle"><input id="directory-history" type="checkbox"> 廃止・一時閉鎖を含める</label><span id="directory-count"></span></div><div class="table-wrap"><table><thead><tr><th>印</th><th>郵便局</th><th>住所・状態</th><th>地図</th></tr></thead><tbody id="directory-body">{{DIRECTORY_ROWS}}</tbody></table></div></main><script>const search=document.getElementById('directory-search'),region=document.getElementById('directory-region'),history=document.getElementById('directory-history'),rows=[...document.querySelectorAll('#directory-body tr')],count=document.getElementById('directory-count');function draw(){const q=search.value.normalize('NFKC').toLowerCase().replace(/[\s　]/g,'');let n=0;rows.forEach(row=>{const okRegion=region.value==='all'||row.dataset.region===region.value;const okHistory=history.checked||!row.classList.contains('historical');const okQuery=!q||row.textContent.normalize('NFKC').toLowerCase().replace(/[\s　]/g,'').includes(q);row.hidden=!(okRegion&&okHistory&&okQuery);if(!row.hidden)n++;});count.textContent=n+'件を表示';}search.addEventListener('input',draw);region.addEventListener('change',draw);history.addEventListener('change',draw);draw();</script></body></html>"""
-    directory_values = _index_values(config, catalog, records, target, source_revision, data_revision)
-    directory_values.update({"REGION_OPTIONS": region_options, "DIRECTORY_ROWS": _directory_rows(records)})
-    _write(output / "post-offices/index.html", _render_tokens(directory_template, directory_values))
-    print_template = """<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>茨城県の風景印・郵便局 印刷用リスト</title><link rel="canonical" href="{{CANONICAL_URL}}print/"><link rel="stylesheet" href="../print.css"></head><body><header><a href="../">← 地図へ戻る</a><p class="eyebrow">IBARAKI STAMP ATLAS / {{VERSION}}</p><h1>茨城県の風景印・郵便局リスト</h1><p>{{COVERAGE}}／確認日 {{VERIFIED_AT}}</p></header><div class="print-tools"><label>検索 <input id="print-search" type="search" placeholder="郵便局名・住所"></label><label>地域 <select id="print-region"><option value="all">全地域</option>{{REGION_OPTIONS}}</select></label><label><input id="print-history" type="checkbox"> 廃止・一時閉鎖を含める</label><button type="button" onclick="window.print()">印刷</button><a href="../exports/stamps.csv">CSV</a><span id="print-count"></span></div><div class="table-wrap"><table><thead><tr><th>郵便局</th><th>市町村</th><th>地域</th><th>住所・状態</th><th>紹介</th></tr></thead><tbody id="print-body">{{PRINT_ROWS}}</tbody></table></div><script src="print.js"></script></body></html>"""
-    print_values = _index_values(config, catalog, records, target, source_revision, data_revision)
-    print_values.update({"REGION_OPTIONS": region_options, "PRINT_ROWS": _print_rows(records)})
-    _write(output / "print/index.html", _render_tokens(print_template, print_values))
-    _write(output / "print.css", """@page{size:A4;margin:12mm}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif;color:#173848;margin:0;font-size:12px}header{border-bottom:2px solid #173848;padding:12px 0 14px;margin-bottom:12px}header a{color:#165d77}.eyebrow{color:#ad3d33;letter-spacing:.16em;font-size:10px;font-weight:700;margin:8px 0}h1{font-size:22px;margin:0 0 7px}header p{margin:4px 0;color:#62737b}.print-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px;padding:8px;background:#f2f6f7}.print-tools label{display:inline-flex;align-items:center;gap:5px}.print-tools input,.print-tools select,.print-tools button{font:inherit;border:1px solid #cbd6dc;border-radius:3px;padding:5px;background:white}.print-tools button{cursor:pointer}.print-tools a{color:#165d77}.print-tools span{margin-left:auto;color:#62737b}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccd7dc;padding:5px 7px;text-align:left;vertical-align:top}th{background:#e9f0f2;font-weight:700}td small{display:block;color:#766c68;margin-top:3px}tr.historical{color:#6a7378;background:#fafafa}a{color:inherit}@media print{header a,.print-tools{display:none}body{font-size:9px}h1{font-size:17px}th,td{padding:3px 4px}.table-wrap{overflow:visible}tr.historical{display:none}}""")
-    _write(output / "print.js", r"""const search=document.getElementById('print-search'),region=document.getElementById('print-region'),history=document.getElementById('print-history'),rows=[...document.querySelectorAll('#print-body tr')],count=document.getElementById('print-count');function draw(){const q=search.value.normalize('NFKC').toLowerCase().replace(/[\s　]/g,'');let n=0;rows.forEach(row=>{const okRegion=region.value==='all'||row.dataset.region===region.value;const okHistory=history.checked||row.dataset.historical!=='true';const okQuery=!q||row.textContent.normalize('NFKC').toLowerCase().replace(/[\s　]/g,'').includes(q);row.hidden=!(okRegion&&okHistory&&okQuery);if(!row.hidden)n++;});count.textContent=n+'件を表示';}search.addEventListener('input',draw);region.addEventListener('change',draw);history.addEventListener('change',draw);draw();""")
+    values = _index_values(config, catalog, records, target, source_revision, data_revision)
+    values["REGION_OPTIONS"] = region_options
+    values["DIRECTORY_ROWS"] = _table_rows(records, with_images=True)
+    values["PRINT_ROWS"] = _table_rows(records, with_images=False)
+    for name, destination in (("directory.html", "post-offices/index.html"), ("print.html", "print/index.html")):
+        template = (root / "source/web" / name).read_text(encoding="utf-8")
+        _write(output / destination, _render_tokens(template, values))
     release = _release(config, catalog, records, target, source_revision, data_revision)
     _write(output / "release.json", json.dumps(release, ensure_ascii=False, indent=2) + "\n")
     _write(output / "sitemap.xml", _sitemap(config))

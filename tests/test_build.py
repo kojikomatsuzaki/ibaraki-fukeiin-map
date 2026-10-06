@@ -10,6 +10,7 @@ from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from urllib.parse import parse_qs, unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,10 +37,18 @@ class HeadTags(HTMLParser):
         super().__init__()
         self.canonical = []
         self.google_verification = []
+        self.assets = []
+        self.map_links = []
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == "script" and attrs.get("src"):
+            self.assets.append(attrs["src"])
+        if tag == "link" and attrs.get("rel") == "stylesheet":
+            self.assets.append(attrs["href"])
+        if tag == "a" and "map-link" in attrs.get("class", "").split():
+            self.map_links.append(attrs["href"])
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical.append(attrs.get("href"))
         if tag == "meta" and attrs.get("name") == "google-site-verification":
@@ -177,6 +186,55 @@ class BuildAcceptanceTests(unittest.TestCase):
         second_release = BUILD_SITE.build(self.root, second)
         self.assertEqual(first_release, second_release)
         self.assertEqual(file_hashes(first), file_hashes(second))
+
+    def test_page_script_and_stylesheet_links_resolve(self):
+        for target in ("github", "sites"):
+            output = self.work / target
+            BUILD_SITE.build(self.root, output, target=target)
+            for page in ("index.html", "post-offices/index.html", "print/index.html"):
+                tags = HeadTags((output / page).read_text(encoding="utf-8"))
+                self.assertTrue(tags.assets, page)
+                for url in tags.assets:
+                    with self.subTest(target=target, page=page, url=url):
+                        parsed = urlsplit(url)
+                        self.assertFalse(parsed.scheme or parsed.netloc)
+                        asset = ((output / page).parent / unquote(parsed.path)).resolve()
+                        self.assertTrue(asset.is_relative_to(output.resolve()))
+                        self.assertTrue(asset.is_file(), str(asset))
+
+    def test_map_links_round_trip_special_names_and_history(self):
+        catalog_path = self.root / "source/catalog.json"
+        catalog = read_json(catalog_path)
+        stamp = next(record for record in catalog["stamps"] if record["historical"])
+        office = next(record for record in catalog["offices"] if record["id"] == stamp["officeId"])
+        name = "移行確認・大洗 & 郵便局 + #?"
+        office["name"] = name
+        write_json(catalog_path, catalog)
+        output = self.work / "links"
+        BUILD_SITE.build(self.root, output)
+        records = read_json(output / "data.json")["records"]
+        for page in ("post-offices/index.html", "print/index.html"):
+            tags = HeadTags((output / page).read_text(encoding="utf-8"))
+            self.assertEqual(len(tags.map_links), len(records))
+            for record, url in zip(records, tags.map_links):
+                with self.subTest(page=page, stamp=record["id"]):
+                    parsed = urlsplit(url)
+                    self.assertEqual(parsed.path, "../")
+                    self.assertEqual(parsed.fragment, "")
+                    expected = {"q": [record["name"]]}
+                    if record["historical"]:
+                        expected["history"] = ["true"]
+                    self.assertEqual(parse_qs(parsed.query), expected)
+
+    def test_source_javascript_changes_revision_without_changing_data(self):
+        first = BUILD_SITE.build(self.root, self.work / "before")
+        script = self.root / "source/web/app.js"
+        script.write_text(script.read_text(encoding="utf-8") + "\n// Revision regression probe.\n",
+                          encoding="utf-8")
+        second = BUILD_SITE.build(self.root, self.work / "after")
+        self.assertNotEqual(first["sourceRevision"], second["sourceRevision"])
+        self.assertEqual(first["dataRevision"], second["dataRevision"])
+        self.assertEqual(first["counts"], second["counts"])
 
 
 if __name__ == "__main__":

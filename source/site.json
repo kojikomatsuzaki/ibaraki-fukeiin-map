@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "contentUpdated": "2026-10-06",
+  "contentUpdated": "2026-10-07",
   "title": "茨城 風景印地図",
   "prefecture": "茨城県",
   "eyebrow": "IBARAKI STAMP ATLAS",
@@ -8,18 +8,47 @@
   "description": "茨城県の風景印を地図で探す。風景印の画像・郵便局の一覧・CSV・印刷用リストを、同じ確認済みデータから提供します。",
   "canonicalUrl": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/",
   "targets": {
-    "github": {"url": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/", "googleVerification": "eJXEcw3Qn5oPlF1YzJSpx2G0EEW-y3z3Av-iUz_FwAg"},
-    "sites": {"url": "https://ibaraki-fukeiin-map.kojikomatsuzaki.chatgpt.site/"}
+    "github": {
+      "url": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/",
+      "googleVerification": "eJXEcw3Qn5oPlF1YzJSpx2G0EEW-y3z3Av-iUz_FwAg"
+    },
+    "sites": {
+      "url": "https://ibaraki-fukeiin-map.kojikomatsuzaki.chatgpt.site/"
+    }
   },
   "repositoryUrl": "https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map",
   "regions": [
-    {"name": "県北", "id": "kenpoku"},
-    {"name": "県央", "id": "keno"},
-    {"name": "鹿行", "id": "rokko"},
-    {"name": "県南", "id": "kennan"},
-    {"name": "県西", "id": "kensei"}
+    {
+      "name": "県北",
+      "id": "kenpoku"
+    },
+    {
+      "name": "県央",
+      "id": "keno"
+    },
+    {
+      "name": "鹿行",
+      "id": "rokko"
+    },
+    {
+      "name": "県南",
+      "id": "kennan"
+    },
+    {
+      "name": "県西",
+      "id": "kensei"
+    }
   ],
-  "bounds": [[35.735, 139.68], [36.955, 140.86]],
+  "bounds": [
+    [
+      35.735,
+      139.68
+    ],
+    [
+      36.955,
+      140.86
+    ]
+  ],
   "boundaryAsset": "assets/ibaraki.geojson",
   "tileUrl": "https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",
   "tileAttribution": "国土地理院 地理院タイル",

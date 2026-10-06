@@ -20,7 +20,7 @@
 
 ## 構成・更新
 
-HTML・CSS・JavaScriptによる静的サイトです。GitHub Pagesでは`main`ブランチのルートを公開元にします。ビルド処理やAPIキーは不要です。
+HTML・CSS・JavaScriptによる静的サイトです。GitHub Pagesでは`main`ブランチのルートを公開元にします。更新時にPythonで生成物を作成します。公開サーバー側のビルド処理やAPIキーは不要です。
 
 - `source/catalog.json`：風景印と郵便局の正本データ（編集対象）
 - `source/site.json`：公開先・SEO・地図設定の正本
@@ -39,6 +39,7 @@ HTML・CSS・JavaScriptによる静的サイトです。GitHub Pagesでは`main`
 ```sh
 python3 scripts/build_site.py --target github --output .
 python3 -B -m unittest discover -s tests -v
+node --test tests/test_catalog_view.cjs
 ```
 
 変更を`main`に反映すると、GitHub Pagesが更新されます。背景地図には国土地理院のオンライン地図を使用しています。

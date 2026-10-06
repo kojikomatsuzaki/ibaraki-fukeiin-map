@@ -1,0 +1,2 @@
+# Preserve CSV's CRLF line endings for spreadsheet compatibility.
+exports/*.csv -text whitespace=cr-at-eol
