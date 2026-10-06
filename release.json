@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "target": "github",
+  "contentUpdated": "2026-10-06",
+  "verifiedAt": "2026-10-05",
+  "sourceUrl": "https://www.post.japanpost.jp/enjoy/culture/stamp/fuke/result_pre.php?pref_id=8",
+  "sourceRevision": "b32ddc078ae21c00",
+  "dataRevision": "27bf5aa57585e740",
+  "counts": {
+    "offices": 219,
+    "stamps": 224,
+    "activeOffices": 209,
+    "activeStamps": 210
+  },
+  "canonicalUrl": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/",
+  "targetUrl": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/"
+}

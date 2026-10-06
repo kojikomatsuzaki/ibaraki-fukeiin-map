@@ -1,18 +1,1325 @@
 {
   "schemaVersion": 2,
-  "version": "2.0.0",
-  "sourceUrl": "https://www.post.japanpost.jp/enjoy/culture/stamp/fuke/result_pre.php?pref_id=8",
   "verifiedAt": "2026-10-05",
-  "contentUpdated": "2026-10-06",
+  "sourceUrl": "https://www.post.japanpost.jp/enjoy/culture/stamp/fuke/result_pre.php?pref_id=8",
   "partial": false,
-  "sourceCount": 224,
-  "officeCount": 219,
-  "activeStampCount": 210,
-  "activeOfficeCount": 209,
-  "sourceRevision": "b32ddc078ae21c00",
-  "dataRevision": "27bf5aa57585e740",
-  "locationNote": "日本郵便の店舗地図に掲載された位置を使用します。旧局所在地や概算位置には注記を付けています。",
-  "records": [
+  "offices": [
+    {
+      "id": "office-0001",
+      "name": "若栗郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0002",
+      "name": "大洗祝町郵便局",
+      "city": "大洗町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0003",
+      "name": "水海道豊岡郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0004",
+      "name": "水戸千波郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0005",
+      "name": "上君田簡易郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0006",
+      "name": "河間郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0007",
+      "name": "高萩東本町郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0008",
+      "name": "嘉田生崎郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0009",
+      "name": "下吉影郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0010",
+      "name": "町屋郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0011",
+      "name": "あずま伊崎郵便局",
+      "city": "稲敷市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0012",
+      "name": "大増郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0013",
+      "name": "高浜郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0014",
+      "name": "友部旭町郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0015",
+      "name": "岩間郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0016",
+      "name": "阿見青宿郵便局",
+      "city": "阿見町",
+      "region": "県南"
+    },
+    {
+      "id": "office-0017",
+      "name": "下妻郵便局",
+      "city": "下妻市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0018",
+      "name": "水戸駅前郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0019",
+      "name": "神栖知手郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0020",
+      "name": "水戸市役所前郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0021",
+      "name": "羽鳥郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0022",
+      "name": "那珂郵便局",
+      "city": "那珂市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0023",
+      "name": "結城白銀郵便局",
+      "city": "結城市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0024",
+      "name": "水戸元吉田郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0025",
+      "name": "八郷郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0026",
+      "name": "石塚郵便局",
+      "city": "城里町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0027",
+      "name": "塩子郵便局",
+      "city": "城里町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0028",
+      "name": "林郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0029",
+      "name": "大賀郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0030",
+      "name": "湊本町郵便局",
+      "city": "ひたちなか市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0031",
+      "name": "茨城大学前郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0032",
+      "name": "常澄郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0033",
+      "name": "飯富郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0034",
+      "name": "水戸東赤塚郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0035",
+      "name": "水戸双葉台郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0036",
+      "name": "水戸河和田郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0037",
+      "name": "水戸松が丘郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0038",
+      "name": "水戸東原郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0039",
+      "name": "水戸渡里郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0040",
+      "name": "水戸見和郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0041",
+      "name": "水戸平須郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0042",
+      "name": "水戸石川郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0043",
+      "name": "久慈浜郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0044",
+      "name": "友部郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0045",
+      "name": "水戸緑岡郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0046",
+      "name": "水戸本町郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0047",
+      "name": "水戸酒門郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0048",
+      "name": "三坂郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0049",
+      "name": "菅原郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0050",
+      "name": "水海道五箇郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0051",
+      "name": "水海道諏訪郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0052",
+      "name": "水海道坂手郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0053",
+      "name": "真壁郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0054",
+      "name": "鹿嶋郵便局",
+      "city": "鹿嶋市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0055",
+      "name": "子生郵便局",
+      "city": "鉾田市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0056",
+      "name": "ひたちなか郵便局",
+      "city": "ひたちなか市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0057",
+      "name": "龍ケ崎郵便局",
+      "city": "龍ケ崎市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0058",
+      "name": "延方郵便局",
+      "city": "潮来市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0059",
+      "name": "日立河原子郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0060",
+      "name": "大宮上町郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0061",
+      "name": "藤代郵便局",
+      "city": "取手市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0062",
+      "name": "下館玉戸郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0063",
+      "name": "麻生郵便局",
+      "city": "行方市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0064",
+      "name": "玉造郵便局",
+      "city": "行方市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0065",
+      "name": "北浦郵便局",
+      "city": "行方市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0066",
+      "name": "波崎土合ヶ原郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0067",
+      "name": "水戸中央郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0068",
+      "name": "沢辺郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0069",
+      "name": "日立土木内郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0070",
+      "name": "取手一郵便局",
+      "city": "取手市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0071",
+      "name": "常陸小川郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0072",
+      "name": "竹原郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0073",
+      "name": "橘郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0074",
+      "name": "玉里郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0075",
+      "name": "小川飯前郵便局",
+      "city": "小美玉市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0076",
+      "name": "矢田部郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0077",
+      "name": "茨城県庁内郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0078",
+      "name": "水戸袴塚郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0079",
+      "name": "守谷郵便局",
+      "city": "守谷市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0080",
+      "name": "日立郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0081",
+      "name": "友部上市原郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0082",
+      "name": "北茨城華川郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0083",
+      "name": "宍戸郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0084",
+      "name": "南川根郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0085",
+      "name": "北川根郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0086",
+      "name": "友部駅前郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0087",
+      "name": "協和郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0088",
+      "name": "天下野郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0089",
+      "name": "大洗郵便局",
+      "city": "大洗町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0090",
+      "name": "つくば田井郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0091",
+      "name": "水戸吉沢郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0092",
+      "name": "水戸米沢郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0093",
+      "name": "水戸城東郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0094",
+      "name": "瓦会郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0095",
+      "name": "安中郵便局",
+      "city": "美浦村",
+      "region": "県南"
+    },
+    {
+      "id": "office-0096",
+      "name": "常陸太田里野宮郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0097",
+      "name": "明野郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0098",
+      "name": "中上野郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0099",
+      "name": "村田郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0100",
+      "name": "別所郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0101",
+      "name": "鹿嶋平井郵便局",
+      "city": "鹿嶋市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0102",
+      "name": "上郷郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0103",
+      "name": "七郷郵便局",
+      "city": "坂東市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0104",
+      "name": "つくば小田郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0105",
+      "name": "葦穂郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0106",
+      "name": "岩船郵便局",
+      "city": "城里町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0107",
+      "name": "三和郵便局",
+      "city": "古河市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0108",
+      "name": "総和郵便局",
+      "city": "古河市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0109",
+      "name": "阿波山郵便局",
+      "city": "城里町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0110",
+      "name": "石下郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0111",
+      "name": "萩原郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0112",
+      "name": "大場郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0113",
+      "name": "檜沢郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0114",
+      "name": "平潟郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0115",
+      "name": "馬渡郵便局",
+      "city": "ひたちなか市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0116",
+      "name": "那珂湊相金郵便局",
+      "city": "ひたちなか市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0117",
+      "name": "緒川郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0118",
+      "name": "上野合郵便局",
+      "city": "茨城町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0119",
+      "name": "岩瀬郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0120",
+      "name": "出島郵便局",
+      "city": "かすみがうら市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0121",
+      "name": "牛渡郵便局",
+      "city": "かすみがうら市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0122",
+      "name": "安飾郵便局",
+      "city": "かすみがうら市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0123",
+      "name": "志士庫郵便局",
+      "city": "かすみがうら市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0124",
+      "name": "土浦南郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0125",
+      "name": "土浦荒川沖郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0126",
+      "name": "美浦郵便局",
+      "city": "美浦村",
+      "region": "県南"
+    },
+    {
+      "id": "office-0127",
+      "name": "常陸太田栄町郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0128",
+      "name": "水戸末広郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0129",
+      "name": "北茨城郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0130",
+      "name": "赤塚郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0131",
+      "name": "町付郵便局",
+      "city": "大子町",
+      "region": "県北"
+    },
+    {
+      "id": "office-0132",
+      "name": "古河郵便局",
+      "city": "古河市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0133",
+      "name": "美和郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0134",
+      "name": "筑波郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0135",
+      "name": "関城郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0136",
+      "name": "福原郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0137",
+      "name": "笠間石井郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0138",
+      "name": "稲田郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0139",
+      "name": "大池田郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0140",
+      "name": "笠間駅前郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0141",
+      "name": "笠間大町郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0142",
+      "name": "笠間郵便局",
+      "city": "笠間市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0143",
+      "name": "猿島郵便局",
+      "city": "坂東市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0144",
+      "name": "大生原郵便局",
+      "city": "潮来市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0145",
+      "name": "水戸五軒町郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0146",
+      "name": "紫尾郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0147",
+      "name": "真壁長岡郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0148",
+      "name": "鯉淵郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0149",
+      "name": "五霞郵便局",
+      "city": "五霞町",
+      "region": "県西"
+    },
+    {
+      "id": "office-0150",
+      "name": "菅生郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0151",
+      "name": "小絹郵便局",
+      "city": "つくばみらい市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0152",
+      "name": "土浦都和郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0153",
+      "name": "古河中田郵便局",
+      "city": "古河市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0154",
+      "name": "雨引郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0155",
+      "name": "大国郵便局",
+      "city": "桜川市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0156",
+      "name": "国田郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0157",
+      "name": "田伏郵便局",
+      "city": "かすみがうら市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0158",
+      "name": "那珂向山郵便局",
+      "city": "那珂市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0159",
+      "name": "大子袋田郵便局",
+      "city": "大子町",
+      "region": "県北"
+    },
+    {
+      "id": "office-0160",
+      "name": "小桜郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0161",
+      "name": "下館折本郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0162",
+      "name": "高萩上手綱郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0163",
+      "name": "里美郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0164",
+      "name": "上小川郵便局",
+      "city": "大子町",
+      "region": "県北"
+    },
+    {
+      "id": "office-0165",
+      "name": "大塚郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0166",
+      "name": "牛堀郵便局",
+      "city": "潮来市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0167",
+      "name": "久米郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0168",
+      "name": "金郷郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0169",
+      "name": "小幡郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0170",
+      "name": "多賀郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0171",
+      "name": "鹿島神宮前郵便局",
+      "city": "鹿嶋市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0172",
+      "name": "山方郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0173",
+      "name": "水戸大工町郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0174",
+      "name": "松平郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0175",
+      "name": "大子郵便局",
+      "city": "大子町",
+      "region": "県北"
+    },
+    {
+      "id": "office-0176",
+      "name": "牛久郵便局",
+      "city": "牛久市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0177",
+      "name": "茨城境郵便局",
+      "city": "境町",
+      "region": "県西"
+    },
+    {
+      "id": "office-0178",
+      "name": "水府郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0179",
+      "name": "荒井郵便局",
+      "city": "鹿嶋市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0180",
+      "name": "藤沢郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0181",
+      "name": "山ノ荘郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0182",
+      "name": "高萩島名郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0183",
+      "name": "大中郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0184",
+      "name": "大宮郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0185",
+      "name": "下館横島郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0186",
+      "name": "下館西方郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0187",
+      "name": "五所郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0188",
+      "name": "川島郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0189",
+      "name": "下館駅前郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0190",
+      "name": "大津西町郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0191",
+      "name": "高倉郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0192",
+      "name": "下館大町郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0193",
+      "name": "日立宮田郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0194",
+      "name": "瓜連郵便局",
+      "city": "那珂市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0195",
+      "name": "中里郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0196",
+      "name": "筑波学園郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0197",
+      "name": "伊奈郵便局",
+      "city": "つくばみらい市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0198",
+      "name": "原研前郵便局",
+      "city": "東海村",
+      "region": "県央"
+    },
+    {
+      "id": "office-0199",
+      "name": "神栖郵便局",
+      "city": "神栖市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0200",
+      "name": "水海道郵便局",
+      "city": "常総市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0201",
+      "name": "大津郵便局",
+      "city": "北茨城市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0202",
+      "name": "高萩郵便局",
+      "city": "高萩市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0203",
+      "name": "金砂郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0204",
+      "name": "岩井郵便局",
+      "city": "坂東市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0205",
+      "name": "取手郵便局",
+      "city": "取手市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0206",
+      "name": "土浦郵便局",
+      "city": "土浦市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0207",
+      "name": "潮来郵便局",
+      "city": "潮来市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0208",
+      "name": "茨城郵便局",
+      "city": "茨城町",
+      "region": "県央"
+    },
+    {
+      "id": "office-0209",
+      "name": "鉾田郵便局",
+      "city": "鉾田市",
+      "region": "鹿行"
+    },
+    {
+      "id": "office-0210",
+      "name": "御前山郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0211",
+      "name": "野口郵便局",
+      "city": "常陸大宮市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0212",
+      "name": "水戸下市郵便局",
+      "city": "水戸市",
+      "region": "県央"
+    },
+    {
+      "id": "office-0213",
+      "name": "筑波山郵便局",
+      "city": "つくば市",
+      "region": "県南"
+    },
+    {
+      "id": "office-0214",
+      "name": "川尻郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0215",
+      "name": "十王郵便局",
+      "city": "日立市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0216",
+      "name": "下館郵便局",
+      "city": "筑西市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0217",
+      "name": "常陸太田郵便局",
+      "city": "常陸太田市",
+      "region": "県北"
+    },
+    {
+      "id": "office-0218",
+      "name": "結城郵便局",
+      "city": "結城市",
+      "region": "県西"
+    },
+    {
+      "id": "office-0219",
+      "name": "石岡郵便局",
+      "city": "石岡市",
+      "region": "県南"
+    }
+  ],
+  "stamps": [
     {
       "officeId": "office-0001",
       "id": "12523",
@@ -34,18 +1341,7 @@
       "coordinateNote": "国土地理院の施設名検索で確認した旧局所在地",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E8%8B%A5%E6%A0%97%E9%83%B5%E4%BE%BF%E5%B1%80",
       "description": null,
-      "dateWarning": null,
-      "name": "若栗郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "12523",
-      "imageUrl": "assets/stamps/12523.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2026-10-02 風景印廃止",
-      "status": "2026-10-02 風景印廃止",
-      "displayAddress": "茨城県高萩市若栗137-4",
-      "addressLabel": "茨城県高萩市若栗137-4",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0002",
@@ -68,18 +1364,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106394000/",
       "description": "大洗県立公園、郵便局周辺の風景、イルカを描く",
-      "dateWarning": null,
-      "name": "大洗祝町郵便局",
-      "city": "大洗町",
-      "region": "県央",
-      "stampId": "4112",
-      "imageUrl": "assets/stamps/4112.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡大洗町磯浜町８０９３−４",
-      "addressLabel": "茨城県東茨城郡大洗町磯浜町８０９３−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0003",
@@ -102,18 +1387,7 @@
       "coordinateNote": "国土地理院の施設名検索で確認した旧局所在地",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%B0%B4%E6%B5%B7%E9%81%93%E8%B1%8A%E5%B2%A1%E9%83%B5%E4%BE%BF%E5%B1%80",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "水海道豊岡郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "12453",
-      "imageUrl": "assets/stamps/12453.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2026-02-20 風景印廃止",
-      "status": "2026-02-20 風景印廃止",
-      "displayAddress": "茨城県常総市豊岡町丙1517-2",
-      "addressLabel": "茨城県常総市豊岡町丙1517-2",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0004",
@@ -136,18 +1410,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106400000/",
       "description": "ウメを外枠とし、千波湖と偕楽園・好文亭を描く",
-      "dateWarning": null,
-      "name": "水戸千波郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4094",
-      "imageUrl": "assets/stamps/4094.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市千波町２１４−１",
-      "addressLabel": "茨城県水戸市千波町２１４−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0005",
@@ -170,18 +1433,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106779000/",
       "description": "大塚神社とモミの木、下君田のささらを描く",
-      "dateWarning": null,
-      "name": "上君田簡易郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "12261",
-      "imageUrl": "assets/stamps/12261.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県高萩市上君田１０２７",
-      "addressLabel": "茨城県高萩市上君田１０２７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0006",
@@ -204,18 +1456,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106317000/",
       "description": "小貝川、勤行川、笠抜踊り、稲穂、筑波山を描く",
-      "dateWarning": null,
-      "name": "河間郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "12257",
-      "imageUrl": "assets/stamps/12257.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市羽方３−３",
-      "addressLabel": "茨城県筑西市羽方３−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0007",
@@ -238,18 +1479,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106365000/",
       "description": "高戸小浜海岸の風景、万葉の道の歌碑を描く",
-      "dateWarning": null,
-      "name": "高萩東本町郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "4218",
-      "imageUrl": "assets/stamps/4218.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県高萩市東本町２−２６",
-      "addressLabel": "茨城県高萩市東本町２−２６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0008",
@@ -272,18 +1502,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106323000/",
       "description": "小貝川の風景、釣り人、筑波山を描く",
-      "dateWarning": null,
-      "name": "嘉田生崎郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4170",
-      "imageUrl": "assets/stamps/4170.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市西石田１３４１−２",
-      "addressLabel": "茨城県筑西市西石田１３４１−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0009",
@@ -306,18 +1525,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106128000/",
       "description": "筑波山と百里基地に戦闘機Ｆ15イーグルを描く",
-      "dateWarning": null,
-      "name": "下吉影郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "1950",
-      "imageUrl": "assets/stamps/1950.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2024-08-30 風景印廃止",
-      "status": "2024-08-30 風景印廃止",
-      "displayAddress": "茨城県小美玉市下吉影１４５５",
-      "addressLabel": "茨城県小美玉市下吉影１４５５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0010",
@@ -340,18 +1548,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106080000/",
       "description": "レンガ作りの旧変電所、建設90年以上の眼鏡橋(央橋)、地域を流れる里川と鮎、郵便局前設置の丸型ポストを描く",
-      "dateWarning": null,
-      "name": "町屋郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "1926",
-      "imageUrl": "assets/stamps/1926.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市町屋町１２３６−１",
-      "addressLabel": "茨城県常陸太田市町屋町１２３６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0010",
@@ -374,18 +1571,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106080000/",
       "description": "アユ釣りの名所里川、央橋、高鈴山の遠望、アユを描く",
-      "dateWarning": null,
-      "name": "町屋郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "1925",
-      "imageUrl": "assets/stamps/1925.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2024-06-28 風景印廃止",
-      "status": "2024-06-28 風景印廃止",
-      "displayAddress": "茨城県常陸太田市町屋町１２３６−１",
-      "addressLabel": "茨城県常陸太田市町屋町１２３６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0011",
@@ -408,18 +1594,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106218000/",
       "description": "古くから早場米の産地としてあたり一面に広がる水田と、遠くに見える筑波山に稲穂と江戸時代に活躍した第七代横綱の稲妻雷五郎(錦絵横綱土俵入りの図)を配す。",
-      "dateWarning": null,
-      "name": "あずま伊崎郵便局",
-      "city": "稲敷市",
-      "region": "県南",
-      "stampId": "1334",
-      "imageUrl": "assets/stamps/1334.png",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県稲敷市伊佐部１８３０−１０",
-      "addressLabel": "茨城県稲敷市伊佐部１８３０−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0012",
@@ -442,18 +1617,7 @@
       "coordinateNote": "旧所在地を住所から補完した概算位置です",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E8%8C%A8%E5%9F%8E%E7%9C%8C%E7%9F%B3%E5%B2%A1%E5%B8%82%E5%A4%A7%E5%A2%971883-1",
       "description": null,
-      "dateWarning": null,
-      "name": "大増郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "1377",
-      "imageUrl": "assets/stamps/1377.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2021-03-15 風景印廃止",
-      "status": "2021-03-15 風景印廃止",
-      "displayAddress": "茨城県石岡市大増1883-1",
-      "addressLabel": "茨城県石岡市大増1883-1",
-      "locationLabel": "概算位置"
+      "dateWarning": null
     },
     {
       "officeId": "office-0013",
@@ -476,18 +1640,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106096000/",
       "description": "霞ヶ浦から見る筑波山、霞ヶ浦に生息する鯉、関東第二の大きさを誇る前方後円墳の舟塚山古墳を配す。",
-      "dateWarning": null,
-      "name": "高浜郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "1313",
-      "imageUrl": "assets/stamps/1313.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市高浜８１１",
-      "addressLabel": "茨城県石岡市高浜８１１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0014",
@@ -510,18 +1663,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106700000/",
       "description": null,
-      "dateWarning": null,
-      "name": "友部旭町郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "1166",
-      "imageUrl": "assets/stamps/1166.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2020-02-28 風景印廃止",
-      "status": "2020-02-28 風景印廃止",
-      "displayAddress": "茨城県笠間市旭町９１−２",
-      "addressLabel": "茨城県笠間市旭町９１−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0015",
@@ -544,18 +1686,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106097000/",
       "description": null,
-      "dateWarning": null,
-      "name": "岩間郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "1165",
-      "imageUrl": "assets/stamps/1165.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2020-02-28 風景印廃止",
-      "status": "2020-02-28 風景印廃止",
-      "displayAddress": "茨城県笠間市下郷４４３８",
-      "addressLabel": "茨城県笠間市下郷４４３８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0016",
@@ -578,18 +1709,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106474000/",
       "description": "予科練平和記念館の建物および飛行機",
-      "dateWarning": null,
-      "name": "阿見青宿郵便局",
-      "city": "阿見町",
-      "region": "県南",
-      "stampId": "913",
-      "imageUrl": "assets/stamps/913.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県稲敷郡阿見町青宿６６９−１０",
-      "addressLabel": "茨城県稲敷郡阿見町青宿６６９−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0017",
@@ -612,18 +1732,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106013000/",
       "description": null,
-      "dateWarning": "公式の使用開始日欄は使用終了日を表示している旨の注記があります。",
-      "name": "下妻郵便局",
-      "city": "下妻市",
-      "region": "県西",
-      "stampId": "863",
-      "imageUrl": "assets/stamps/863.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2017-10-31 風景印廃止",
-      "status": "2017-10-31 風景印廃止",
-      "displayAddress": "茨城県下妻市下妻乙１１６７−１",
-      "addressLabel": "茨城県下妻市下妻乙１１６７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": "公式の使用開始日欄は使用終了日を表示している旨の注記があります。"
     },
     {
       "officeId": "office-0018",
@@ -646,18 +1755,7 @@
       "coordinateNote": "旧所在地を住所から補完した概算位置です",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E8%8C%A8%E5%9F%8E%E7%9C%8C%E6%B0%B4%E6%88%B8%E5%B8%82%E5%AE%AE%E7%94%BA2-3-12",
       "description": null,
-      "dateWarning": "公式の使用開始日と廃止日が同日です。廃止告知の掲載であり実際の使用開始日は要確認です。",
-      "name": "水戸駅前郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "537",
-      "imageUrl": "assets/stamps/537.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2014-02-28 風景印廃止",
-      "status": "2014-02-28 風景印廃止",
-      "displayAddress": "茨城県水戸市宮町2-3-12",
-      "addressLabel": "茨城県水戸市宮町2-3-12",
-      "locationLabel": "概算位置"
+      "dateWarning": "公式の使用開始日と廃止日が同日です。廃止告知の掲載であり実際の使用開始日は要確認です。"
     },
     {
       "officeId": "office-0019",
@@ -680,18 +1778,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106414000/",
       "description": null,
-      "dateWarning": "公式の使用開始日欄は使用終了日を表示している旨の注記があります。",
-      "name": "神栖知手郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "880",
-      "imageUrl": "assets/stamps/880.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2018-02-28 風景印廃止",
-      "status": "2018-02-28 風景印廃止",
-      "displayAddress": "茨城県神栖市知手中央３−５−３２",
-      "addressLabel": "茨城県神栖市知手中央３−５−３２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": "公式の使用開始日欄は使用終了日を表示している旨の注記があります。"
     },
     {
       "officeId": "office-0017",
@@ -714,18 +1801,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106013000/",
       "description": "道の駅、筑波山、小貝川ふれあい公園ネイチャーセンターおよびネイチャーセンター敷地内のオオムラサキを模した建物",
-      "dateWarning": null,
-      "name": "下妻郵便局",
-      "city": "下妻市",
-      "region": "県西",
-      "stampId": "864",
-      "imageUrl": "assets/stamps/864.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県下妻市下妻乙１１６７−１",
-      "addressLabel": "茨城県下妻市下妻乙１１６７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0020",
@@ -748,18 +1824,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106439000/",
       "description": "ウメを外枠とし、水戸駅北口の水戸黄門・助さん・格さん像を描く",
-      "dateWarning": null,
-      "name": "水戸市役所前郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4095",
-      "imageUrl": "assets/stamps/4095.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市中央２−６−７",
-      "addressLabel": "茨城県水戸市中央２−６−７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0020",
@@ -782,18 +1847,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106439000/",
       "description": "水戸駅北口の水戸黄門・助さん・格さん像を描き、県花の梅を配す。",
-      "dateWarning": null,
-      "name": "水戸市役所前郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "591",
-      "imageUrl": "assets/stamps/591.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市中央２−６−７",
-      "addressLabel": "茨城県水戸市中央２−６−７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0020",
@@ -816,18 +1870,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106439000/",
       "description": null,
-      "dateWarning": "公式の使用開始日と廃止日が同日です。廃止告知の掲載であり実際の使用開始日は要確認です。",
-      "name": "水戸市役所前郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "590",
-      "imageUrl": "assets/stamps/590.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2014-06-30 風景印廃止",
-      "status": "2014-06-30 風景印廃止",
-      "displayAddress": "茨城県水戸市中央２−６−７",
-      "addressLabel": "茨城県水戸市中央２−６−７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": "公式の使用開始日と廃止日が同日です。廃止告知の掲載であり実際の使用開始日は要確認です。"
     },
     {
       "officeId": "office-0021",
@@ -850,18 +1893,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106155000/",
       "description": null,
-      "dateWarning": "公式に掲載された使用開始日が廃止日より後の日付です。開始日は未確定として扱います。",
-      "name": "羽鳥郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "527",
-      "imageUrl": "assets/stamps/527.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2014-01-17 風景印廃止",
-      "status": "2014-01-17 風景印廃止",
-      "displayAddress": "茨城県小美玉市羽鳥２５８８−３",
-      "addressLabel": "茨城県小美玉市羽鳥２５８８−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": "公式に掲載された使用開始日が廃止日より後の日付です。開始日は未確定として扱います。"
     },
     {
       "officeId": "office-0022",
@@ -884,18 +1916,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106020000/",
       "description": "曲がり屋、ポストを描く",
-      "dateWarning": null,
-      "name": "那珂郵便局",
-      "city": "那珂市",
-      "region": "県央",
-      "stampId": "4946",
-      "imageUrl": "assets/stamps/4946.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県那珂市菅谷１６７−７",
-      "addressLabel": "茨城県那珂市菅谷１６７−７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0023",
@@ -918,18 +1939,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106358000/",
       "description": "国の重要無形文化財である結城紬を織っている女性を中心に、筑波山、桑の葉をモチーフにしています。",
-      "dateWarning": null,
-      "name": "結城白銀郵便局",
-      "city": "結城市",
-      "region": "県西",
-      "stampId": "341",
-      "imageUrl": "assets/stamps/341.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県結城市結城７２５３−１",
-      "addressLabel": "茨城県結城市結城７２５３−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0024",
@@ -952,18 +1962,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106258000/",
       "description": "国指定史跡・吉田古墳の石室奥壁に描かれた線刻壁画を中心に配し、周囲は古墳の周隍をあらわす二重の八角形で囲んだデザイン。",
-      "dateWarning": null,
-      "name": "水戸元吉田郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "262",
-      "imageUrl": "assets/stamps/262.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市元吉田町１５９０−４",
-      "addressLabel": "茨城県水戸市元吉田町１５９０−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0025",
@@ -986,18 +1985,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106048000/",
       "description": "峰寺山西光院、ユリ、筑波山を描く",
-      "dateWarning": null,
-      "name": "八郷郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4156",
-      "imageUrl": "assets/stamps/4156.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市柿岡２０２６",
-      "addressLabel": "茨城県石岡市柿岡２０２６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0026",
@@ -1020,18 +2008,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106043000/",
       "description": "樹齢350年～400年と推定される「スジダイ」（町指定天然記念物）と、この巨木に住むとされる「ホロル」（伝説のフクロウ）を配す",
-      "dateWarning": null,
-      "name": "石塚郵便局",
-      "city": "城里町",
-      "region": "県央",
-      "stampId": "67",
-      "imageUrl": "assets/stamps/67.gif",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡城里町石塚２２１２−３",
-      "addressLabel": "茨城県東茨城郡城里町石塚２２１２−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0027",
@@ -1054,18 +2031,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106092000/",
       "description": "八瓶山を背景に旧七会村の村花「山桜」と村鳥「キジ」を配す",
-      "dateWarning": null,
-      "name": "塩子郵便局",
-      "city": "城里町",
-      "region": "県央",
-      "stampId": "66",
-      "imageUrl": "assets/stamps/66.gif",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡城里町塩子３４２１−１",
-      "addressLabel": "茨城県東茨城郡城里町塩子３４２１−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0028",
@@ -1088,18 +2054,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106337000/",
       "description": "茨城県畜産センターのマスコット、サイロ、遠くにそびえる筑波山を配す。",
-      "dateWarning": null,
-      "name": "林郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "46",
-      "imageUrl": "assets/stamps/46.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市下林８３４−１２",
-      "addressLabel": "茨城県石岡市下林８３４−１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0029",
@@ -1122,18 +2077,7 @@
       "coordinateNote": "現在の郵便局の位置。風景印カタログの記載住所とは異なります",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106195000/",
       "description": "久慈川の風景（辰ノ口堰）とアユを配す",
-      "dateWarning": null,
-      "name": "大賀郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "62",
-      "imageUrl": "assets/stamps/62.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市岩崎３３２−２",
-      "addressLabel": "茨城県常陸大宮市岩崎３３２−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0030",
@@ -1156,18 +2100,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106015000/",
       "description": "中生代白亜紀層と水門帰帆の碑を描く",
-      "dateWarning": null,
-      "name": "湊本町郵便局",
-      "city": "ひたちなか市",
-      "region": "県央",
-      "stampId": "4135",
-      "imageUrl": "assets/stamps/4135.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県ひたちなか市湊本町９−１",
-      "addressLabel": "茨城県ひたちなか市湊本町９−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0031",
@@ -1190,18 +2123,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106364000/",
       "description": "ウメを外枠とし、茨城大学とウメを描く",
-      "dateWarning": null,
-      "name": "茨城大学前郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4102",
-      "imageUrl": "assets/stamps/4102.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市袴塚３−９−６",
-      "addressLabel": "茨城県水戸市袴塚３−９−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0032",
@@ -1224,18 +2146,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106216000/",
       "description": "ウメを外枠とし、史跡・大串貝塚の土器、新那珂川大橋、六地蔵のシダレザクラを描く",
-      "dateWarning": null,
-      "name": "常澄郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4110",
-      "imageUrl": "assets/stamps/4110.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市東前２−５",
-      "addressLabel": "茨城県水戸市東前２−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0033",
@@ -1258,18 +2169,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106123000/",
       "description": "ウメを外枠とし、西田川水門とハクセキレイを描く",
-      "dateWarning": null,
-      "name": "飯富郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4113",
-      "imageUrl": "assets/stamps/4113.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市飯富町１２３２",
-      "addressLabel": "茨城県水戸市飯富町１２３２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0034",
@@ -1292,18 +2192,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106435000/",
       "description": "ウメを外枠とし、赤塚町地区風景とウメを描く",
-      "dateWarning": null,
-      "name": "水戸東赤塚郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4118",
-      "imageUrl": "assets/stamps/4118.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市赤塚１−２０４９",
-      "addressLabel": "茨城県水戸市赤塚１−２０４９",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0035",
@@ -1326,18 +2215,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106436000/",
       "description": "ウメを外枠とし、大塚池公園、ふたば並木通り、ウメを描く",
-      "dateWarning": null,
-      "name": "水戸双葉台郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4119",
-      "imageUrl": "assets/stamps/4119.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市双葉台４−３−１１",
-      "addressLabel": "茨城県水戸市双葉台４−３−１１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0036",
@@ -1360,18 +2238,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106440000/",
       "description": "河和田八景の桜川流域の膳棚を描く",
-      "dateWarning": null,
-      "name": "水戸河和田郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4120",
-      "imageUrl": "assets/stamps/4120.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市河和田３−２３８０−１",
-      "addressLabel": "茨城県水戸市河和田３−２３８０−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0037",
@@ -1394,18 +2261,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106352000/",
       "description": "ウメを外枠とし、沢渡川、沢渡橋、スーパーひたち号を描く",
-      "dateWarning": null,
-      "name": "水戸松が丘郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4101",
-      "imageUrl": "assets/stamps/4101.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市松が丘１−２−４３",
-      "addressLabel": "茨城県水戸市松が丘１−２−４３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0038",
@@ -1428,18 +2284,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106373000/",
       "description": "ウメを外枠とし、茨城県立歴史館と徳川光圀肖像画を描く",
-      "dateWarning": null,
-      "name": "水戸東原郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4103",
-      "imageUrl": "assets/stamps/4103.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市東原１−３−４",
-      "addressLabel": "茨城県水戸市東原１−３−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0039",
@@ -1462,18 +2307,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106385000/",
       "description": "ウメを外枠とし、台渡里廃寺跡発掘現場と出土した丸瓦・文字瓦を描く",
-      "dateWarning": null,
-      "name": "水戸渡里郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4104",
-      "imageUrl": "assets/stamps/4104.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市渡里町２９３７−２",
-      "addressLabel": "茨城県水戸市渡里町２９３７−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0040",
@@ -1496,18 +2330,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106386000/",
       "description": "ウメを外枠とし、偕楽園桜山と玉龍泉を描く",
-      "dateWarning": null,
-      "name": "水戸見和郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4105",
-      "imageUrl": "assets/stamps/4105.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市見和２−２５１−２２",
-      "addressLabel": "茨城県水戸市見和２−２５１−２２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0041",
@@ -1530,18 +2353,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106406000/",
       "description": "ウメを外枠とし、市植物公園植物館と花ガーデンを描く",
-      "dateWarning": null,
-      "name": "水戸平須郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4106",
-      "imageUrl": "assets/stamps/4106.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市平須町１８１９−７２",
-      "addressLabel": "茨城県水戸市平須町１８１９−７２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0042",
@@ -1564,18 +2376,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106447000/",
       "description": "ウメを外枠とし、堀原運動公園武道館と第十九代横綱・常陸山谷右衛門像を描く",
-      "dateWarning": null,
-      "name": "水戸石川郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4107",
-      "imageUrl": "assets/stamps/4107.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市石川１−３９００−５",
-      "addressLabel": "茨城県水戸市石川１−３９００−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0043",
@@ -1598,18 +2399,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106035000/",
       "description": "灯台、久慈川の橋、ハマギク、ヒラメを描く",
-      "dateWarning": null,
-      "name": "久慈浜郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4954",
-      "imageUrl": "assets/stamps/4954.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市久慈町３−３２−１５",
-      "addressLabel": "茨城県日立市久慈町３−３２−１５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0044",
@@ -1632,18 +2422,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106152000/",
       "description": "茨城観光百選白鳥湖、キク、ハクチョウを描く",
-      "dateWarning": null,
-      "name": "友部郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4970",
-      "imageUrl": "assets/stamps/4970.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市八雲２−９−１２",
-      "addressLabel": "茨城県笠間市八雲２−９−１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0045",
@@ -1666,18 +2445,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106190000/",
       "description": "ウメを外枠とし、水戸市民球場とウメを描く",
-      "dateWarning": null,
-      "name": "水戸緑岡郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4089",
-      "imageUrl": "assets/stamps/4089.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市千波町2461",
-      "addressLabel": "茨城県水戸市千波町2461",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0046",
@@ -1700,18 +2468,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106192000/",
       "description": "ウメを外枠とし、旧町名・曲尺手町の地図とだるま市のダルマを描く",
-      "dateWarning": null,
-      "name": "水戸本町郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4090",
-      "imageUrl": "assets/stamps/4090.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市本町３−２０−３５",
-      "addressLabel": "茨城県水戸市本町３−２０−３５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0047",
@@ -1734,18 +2491,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106390000/",
       "description": "ウメを外枠とし、追鳥狩絵図とダイコンむき花を描く",
-      "dateWarning": null,
-      "name": "水戸酒門郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4093",
-      "imageUrl": "assets/stamps/4093.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市酒門町１２６１−５",
-      "addressLabel": "茨城県水戸市酒門町１２６１−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0048",
@@ -1768,18 +2514,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106185000/",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "三坂郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4182",
-      "imageUrl": "assets/stamps/4182.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市三坂町１５４４−４",
-      "addressLabel": "茨城県常総市三坂町１５４４−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0049",
@@ -1802,18 +2537,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106231000/",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "菅原郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4183",
-      "imageUrl": "assets/stamps/4183.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市大生郷新田町１１３９−３",
-      "addressLabel": "茨城県常総市大生郷新田町１１３９−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0050",
@@ -1836,18 +2560,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106309000/",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "水海道五箇郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4184",
-      "imageUrl": "assets/stamps/4184.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市上蛇町１５０３−１",
-      "addressLabel": "茨城県常総市上蛇町１５０３−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0003",
@@ -1870,18 +2583,7 @@
       "coordinateNote": "国土地理院の施設名検索で確認した旧局所在地",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%B0%B4%E6%B5%B7%E9%81%93%E8%B1%8A%E5%B2%A1%E9%83%B5%E4%BE%BF%E5%B1%80",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "水海道豊岡郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4185",
-      "imageUrl": "assets/stamps/4185.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2026-02-21 郵便局閉鎖",
-      "status": "2026-02-21 郵便局閉鎖",
-      "displayAddress": "茨城県常総市豊岡町丙1517-2",
-      "addressLabel": "茨城県常総市豊岡町丙1517-2",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0051",
@@ -1904,18 +2606,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106356000/",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "水海道諏訪郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4186",
-      "imageUrl": "assets/stamps/4186.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市水海道諏訪町２７９６−５",
-      "addressLabel": "茨城県常総市水海道諏訪町２７９６−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0052",
@@ -1938,18 +2629,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106374000/",
       "description": "筑波山と坂野家住宅(水海道風土博物館)を描く",
-      "dateWarning": null,
-      "name": "水海道坂手郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4187",
-      "imageUrl": "assets/stamps/4187.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市坂手町１２６９−６",
-      "addressLabel": "茨城県常総市坂手町１２６９−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0053",
@@ -1972,18 +2652,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106014000/",
       "description": "雪見灯篭を外枠とし、筑波山と蔵を描く",
-      "dateWarning": null,
-      "name": "真壁郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4161",
-      "imageUrl": "assets/stamps/4161.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市真壁町飯塚１００１−２",
-      "addressLabel": "茨城県桜川市真壁町飯塚１００１−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0054",
@@ -2006,18 +2675,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106057000/",
       "description": "鹿島神宮の楼門、県立カシマスタジアムを描く",
-      "dateWarning": null,
-      "name": "鹿嶋郵便局",
-      "city": "鹿嶋市",
-      "region": "鹿行",
-      "stampId": "4959",
-      "imageUrl": "assets/stamps/4959.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鹿嶋市鉢形１５２７−２",
-      "addressLabel": "茨城県鹿嶋市鉢形１５２７−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0055",
@@ -2040,18 +2698,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106093000/",
       "description": "メロンを外枠とし、子生弁天様の厳島神社を描く",
-      "dateWarning": null,
-      "name": "子生郵便局",
-      "city": "鉾田市",
-      "region": "鹿行",
-      "stampId": "4152",
-      "imageUrl": "assets/stamps/4152.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鉾田市子生３８７−１",
-      "addressLabel": "茨城県鉾田市子生３８７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0056",
@@ -2074,18 +2721,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106284000/",
       "description": "史跡・虎塚古墳の壁画、イチョウを描く",
-      "dateWarning": null,
-      "name": "ひたちなか郵便局",
-      "city": "ひたちなか市",
-      "region": "県央",
-      "stampId": "4971",
-      "imageUrl": "assets/stamps/4971.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県ひたちなか市石川町２８−１",
-      "addressLabel": "茨城県ひたちなか市石川町２８−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0057",
@@ -2108,18 +2744,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106016000/",
       "description": "旧小貝川、多宝塔、撞舞の上部を描く",
-      "dateWarning": null,
-      "name": "龍ケ崎郵便局",
-      "city": "龍ケ崎市",
-      "region": "県南",
-      "stampId": "4945",
-      "imageUrl": "assets/stamps/4945.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県龍ケ崎市出し山町１６８",
-      "addressLabel": "茨城県龍ケ崎市出し山町１６８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0058",
@@ -2142,18 +2767,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106143000/",
       "description": "土俵を外枠とし、延方相撲と帆引船を描く",
-      "dateWarning": null,
-      "name": "延方郵便局",
-      "city": "潮来市",
-      "region": "鹿行",
-      "stampId": "4143",
-      "imageUrl": "assets/stamps/4143.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県潮来市宮前１−２０−６",
-      "addressLabel": "茨城県潮来市宮前１−２０−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0059",
@@ -2176,18 +2790,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106346000/",
       "description": "河原子海岸と烏帽子岩を描く",
-      "dateWarning": null,
-      "name": "日立河原子郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4225",
-      "imageUrl": "assets/stamps/4225.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市河原子町４−３−９",
-      "addressLabel": "茨城県日立市河原子町４−３−９",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0060",
@@ -2210,18 +2813,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106449000/",
       "description": "雪村筆洗の池を描く",
-      "dateWarning": null,
-      "name": "大宮上町郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4247",
-      "imageUrl": "assets/stamps/4247.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市上町３５７",
-      "addressLabel": "茨城県常陸大宮市上町３５７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0061",
@@ -2244,18 +2836,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106069000/",
       "description": "茨城百景岡堰、筑波山を描く",
-      "dateWarning": null,
-      "name": "藤代郵便局",
-      "city": "取手市",
-      "region": "県南",
-      "stampId": "4964",
-      "imageUrl": "assets/stamps/4964.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県取手市片町３３９−１",
-      "addressLabel": "茨城県取手市片町３３９−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0062",
@@ -2278,18 +2859,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106475000/",
       "description": "筑波山とコスモスを描く",
-      "dateWarning": null,
-      "name": "下館玉戸郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4175",
-      "imageUrl": "assets/stamps/4175.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市玉戸山ケ島１８７８−１",
-      "addressLabel": "茨城県筑西市玉戸山ケ島１８７８−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0063",
@@ -2312,18 +2882,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106029000/",
       "description": "霞ヶ浦の帆引船、八坂神社の馬出し祭り、霞ヶ浦を描く",
-      "dateWarning": null,
-      "name": "麻生郵便局",
-      "city": "行方市",
-      "region": "鹿行",
-      "stampId": "4153",
-      "imageUrl": "assets/stamps/4153.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県行方市麻生１１５７",
-      "addressLabel": "茨城県行方市麻生１１５７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0064",
@@ -2346,18 +2905,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106033000/",
       "description": "霞ヶ浦の帆引船、霞ヶ浦ふれあいランド、筑波山、霞ヶ浦を描く",
-      "dateWarning": null,
-      "name": "玉造郵便局",
-      "city": "行方市",
-      "region": "鹿行",
-      "stampId": "4154",
-      "imageUrl": "assets/stamps/4154.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県行方市玉造甲２２７",
-      "addressLabel": "茨城県行方市玉造甲２２７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0065",
@@ -2380,18 +2928,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106087000/",
       "description": "霞ヶ浦の帆引船と風車を描く",
-      "dateWarning": null,
-      "name": "北浦郵便局",
-      "city": "行方市",
-      "region": "鹿行",
-      "stampId": "4155",
-      "imageUrl": "assets/stamps/4155.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県行方市山田１３４０",
-      "addressLabel": "茨城県行方市山田１３４０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0066",
@@ -2414,18 +2951,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106421000/",
       "description": "砂丘、風車、ハマヒルガオを描く",
-      "dateWarning": null,
-      "name": "波崎土合ヶ原郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "4151",
-      "imageUrl": "assets/stamps/4151.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県神栖市土合本町３−９８０９−１６",
-      "addressLabel": "茨城県神栖市土合本町３−９８０９−１６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0067",
@@ -2448,18 +2974,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106001000/",
       "description": "ウメを外枠とし、偕楽園好文亭にウメを描く",
-      "dateWarning": null,
-      "name": "水戸中央郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4936",
-      "imageUrl": "assets/stamps/4936.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市三の丸１−４−２９",
-      "addressLabel": "茨城県水戸市三の丸１−４−２９",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0068",
@@ -2482,18 +2997,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106210000/",
       "description": "筑波山、小町の館、水車小町の里の門社を描く",
-      "dateWarning": null,
-      "name": "沢辺郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4195",
-      "imageUrl": "assets/stamps/4195.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市沢辺８７９−４",
-      "addressLabel": "茨城県土浦市沢辺８７９−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0069",
@@ -2516,18 +3020,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106308000/",
       "description": "久慈川土手の花、新榊橋、時計台のある局舎、阿武隈山脈を描く",
-      "dateWarning": null,
-      "name": "日立土木内郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4224",
-      "imageUrl": "assets/stamps/4224.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市神田町１７１３−１",
-      "addressLabel": "茨城県日立市神田町１７１３−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0070",
@@ -2550,18 +3043,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106431000/",
       "description": "史跡・取手宿本陣とモクセイを描く",
-      "dateWarning": null,
-      "name": "取手一郵便局",
-      "city": "取手市",
-      "region": "県南",
-      "stampId": "4205",
-      "imageUrl": "assets/stamps/4205.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県取手市取手１−１２−１８",
-      "addressLabel": "茨城県取手市取手１−１２−１８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0071",
@@ -2584,18 +3066,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106047000/",
       "description": "ニラの花を外枠とし、筑波山、戦闘機Ｆ15を描く",
-      "dateWarning": null,
-      "name": "常陸小川郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "4958",
-      "imageUrl": "assets/stamps/4958.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県小美玉市小川１６３２",
-      "addressLabel": "茨城県小美玉市小川１６３２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0072",
@@ -2618,18 +3089,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106124000/",
       "description": "羽黒古墳群、竹原城跡、カンナの花、筑波山を描く",
-      "dateWarning": null,
-      "name": "竹原郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "4138",
-      "imageUrl": "assets/stamps/4138.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県小美玉市竹原下郷１７８",
-      "addressLabel": "茨城県小美玉市竹原下郷１７８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0073",
@@ -2652,18 +3112,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106191000/",
       "description": "カッパ碑、筑波山、戦闘機Ｆ15、タチバナの木を描く",
-      "dateWarning": null,
-      "name": "橘郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "4139",
-      "imageUrl": "assets/stamps/4139.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県小美玉市与沢９３７−１",
-      "addressLabel": "茨城県小美玉市与沢９３７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0074",
@@ -2686,18 +3135,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106395000/",
       "description": "カキを外枠とし、レンコン、筑波山、霞ヶ関を描く",
-      "dateWarning": null,
-      "name": "玉里郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "4140",
-      "imageUrl": "assets/stamps/4140.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県小美玉市上玉里１１２５",
-      "addressLabel": "茨城県小美玉市上玉里１１２５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0075",
@@ -2720,18 +3158,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106402000/",
       "description": "戦闘機Ｆ15イーグル、筑波山、小川温泉寿荘を描く",
-      "dateWarning": null,
-      "name": "小川飯前郵便局",
-      "city": "小美玉市",
-      "region": "県央",
-      "stampId": "4141",
-      "imageUrl": "assets/stamps/4141.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県小美玉市飯前２２８−２",
-      "addressLabel": "茨城県小美玉市飯前２２８−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0076",
@@ -2754,18 +3181,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106099000/",
       "description": "銚子市にかかる新橋、ヒスマイトトンボ、ヨシの葉、カモメを描く",
-      "dateWarning": null,
-      "name": "矢田部郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "4149",
-      "imageUrl": "assets/stamps/4149.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県神栖市矢田部６４９８−１",
-      "addressLabel": "茨城県神栖市矢田部６４９８−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0077",
@@ -2788,18 +3204,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106469000/",
       "description": "県庁舎と県議会議事堂とウメの木を描く",
-      "dateWarning": null,
-      "name": "茨城県庁内郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4097",
-      "imageUrl": "assets/stamps/4097.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市笠原町９７８−６",
-      "addressLabel": "茨城県水戸市笠原町９７８−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0078",
@@ -2822,18 +3227,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106162000/",
       "description": "曝井(さらしい)と碑にアジサイを描く",
-      "dateWarning": null,
-      "name": "水戸袴塚郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4100",
-      "imageUrl": "assets/stamps/4100.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市袴塚２−１−４３",
-      "addressLabel": "茨城県水戸市袴塚２−１−４３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0079",
@@ -2856,18 +3250,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106038000/",
       "description": "筑波山、名駅百選・新守谷駅舎、ヤマユリを描く",
-      "dateWarning": null,
-      "name": "守谷郵便局",
-      "city": "守谷市",
-      "region": "県南",
-      "stampId": "4956",
-      "imageUrl": "assets/stamps/4956.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県守谷市本町７０１−２",
-      "addressLabel": "茨城県守谷市本町７０１−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0080",
@@ -2890,18 +3273,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106062000/",
       "description": "サクラを外枠とし、日立風流物のシビックセンターを描く",
-      "dateWarning": null,
-      "name": "日立郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4961",
-      "imageUrl": "assets/stamps/4961.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市幸町２−３−２８",
-      "addressLabel": "茨城県日立市幸町２−３−２８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0081",
@@ -2924,18 +3296,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106353000/",
       "description": "コナラ林を舞うオオムラサキを描く",
-      "dateWarning": null,
-      "name": "友部上市原郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4129",
-      "imageUrl": "assets/stamps/4129.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市上市原１８９１−２",
-      "addressLabel": "茨城県笠間市上市原１８９１−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0082",
@@ -2958,18 +3319,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106141000/",
       "description": "シャクナゲ、大杉、コウヤマキ、花園山渓風景、七ツ滝を描く",
-      "dateWarning": null,
-      "name": "北茨城華川郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4216",
-      "imageUrl": "assets/stamps/4216.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市華川町小豆畑１０７０−８",
-      "addressLabel": "茨城県北茨城市華川町小豆畑１０７０−８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0083",
@@ -2992,18 +3342,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106046000/",
       "description": "北山公園の展望台、ローラーすべり台、湿地帯に咲くミズバシショウを描く",
-      "dateWarning": null,
-      "name": "宍戸郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4121",
-      "imageUrl": "assets/stamps/4121.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市平町２０４０",
-      "addressLabel": "茨城県笠間市平町２０４０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0084",
@@ -3026,18 +3365,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106196000/",
       "description": "愛宕山眼下にある子忍びの森と塙家住宅を描く",
-      "dateWarning": null,
-      "name": "南川根郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4125",
-      "imageUrl": "assets/stamps/4125.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市安居１４６５",
-      "addressLabel": "茨城県笠間市安居１４６５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0085",
@@ -3060,18 +3388,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106318000/",
       "description": "菊作りの様子と各種小ギクを描く",
-      "dateWarning": null,
-      "name": "北川根郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4128",
-      "imageUrl": "assets/stamps/4128.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市湯崎８９４−２",
-      "addressLabel": "茨城県笠間市湯崎８９４−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0086",
@@ -3094,18 +3411,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106427000/",
       "description": "駅構内に止まるフレッシュひたち号、スーパーひたち号、キクを描く",
-      "dateWarning": null,
-      "name": "友部駅前郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4130",
-      "imageUrl": "assets/stamps/4130.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市東平１−１−２２",
-      "addressLabel": "茨城県笠間市東平１−１−２２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0087",
@@ -3128,18 +3434,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106079000/",
       "description": "新治郡衛跡の碑、スイカ、筑波山を描く",
-      "dateWarning": null,
-      "name": "協和郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4162",
-      "imageUrl": "assets/stamps/4162.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市新治１９９１−５６",
-      "addressLabel": "茨城県筑西市新治１９９１−５６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0088",
@@ -3162,18 +3457,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106041000/",
       "description": "竜神大吊橋、鯉のぼり祭の鯉のぼりを描く",
-      "dateWarning": null,
-      "name": "天下野郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4229",
-      "imageUrl": "assets/stamps/4229.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市天下野町５６０２−１",
-      "addressLabel": "茨城県常陸太田市天下野町５６０２−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0089",
@@ -3196,18 +3480,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106012000/",
       "description": "大洗町名産のハマグリ、マリンタワー、カーフェリー、サンビーチ、フェリーふ頭を描く",
-      "dateWarning": null,
-      "name": "大洗郵便局",
-      "city": "大洗町",
-      "region": "県央",
-      "stampId": "4108",
-      "imageUrl": "assets/stamps/4108.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡大洗町磯浜町６８８１−３６４",
-      "addressLabel": "茨城県東茨城郡大洗町磯浜町６８８１−３６４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0090",
@@ -3230,18 +3503,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106313000/",
       "description": "日本の道百選神郡街道、筑波山、筑波山マユ、蚕影山神社の灯篭を描く",
-      "dateWarning": null,
-      "name": "つくば田井郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4208",
-      "imageUrl": "assets/stamps/4208.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市神郡８７０−５",
-      "addressLabel": "茨城県つくば市神郡８７０−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0091",
@@ -3264,18 +3526,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106450000/",
       "description": "史跡・一里塚とウメを描く",
-      "dateWarning": null,
-      "name": "水戸吉沢郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4096",
-      "imageUrl": "assets/stamps/4096.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市吉沢町８１６",
-      "addressLabel": "茨城県水戸市吉沢町８１６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0092",
@@ -3298,18 +3549,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106268000/",
       "description": "ウメを外枠とし、笠原水道竜頭共用栓と徳川光圀公像を描く",
-      "dateWarning": null,
-      "name": "水戸米沢郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4091",
-      "imageUrl": "assets/stamps/4091.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市元吉田町９５６",
-      "addressLabel": "茨城県水戸市元吉田町９５６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0093",
@@ -3332,18 +3572,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106379000/",
       "description": "横山大観生誕地碑、石像、旧弘道館、ウメを描く",
-      "dateWarning": null,
-      "name": "水戸城東郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4092",
-      "imageUrl": "assets/stamps/4092.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市城東２−７−７６",
-      "addressLabel": "茨城県水戸市城東２−７−７６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0094",
@@ -3366,18 +3595,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106170000/",
       "description": "佐久の大杉、鳴滝、筑波山瓦塚出土の瓦を描く",
-      "dateWarning": null,
-      "name": "瓦会郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4158",
-      "imageUrl": "assets/stamps/4158.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市瓦谷２３３６−４",
-      "addressLabel": "茨城県石岡市瓦谷２３３６−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0095",
@@ -3400,18 +3618,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106273000/",
       "description": "陸平貝塚から出土した土器と貝殻に稲穂を描く",
-      "dateWarning": null,
-      "name": "安中郵便局",
-      "city": "美浦村",
-      "region": "県南",
-      "stampId": "4210",
-      "imageUrl": "assets/stamps/4210.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県稲敷郡美浦村土浦２０３２",
-      "addressLabel": "茨城県稲敷郡美浦村土浦２０３２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0096",
@@ -3434,18 +3641,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106319000/",
       "description": "春友彫刻の森のブロンズ像、阿武隈山系を描く",
-      "dateWarning": null,
-      "name": "常陸太田里野宮郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4239",
-      "imageUrl": "assets/stamps/4239.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市里野宮町１０１０−１",
-      "addressLabel": "茨城県常陸太田市里野宮町１０１０−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0097",
@@ -3468,18 +3664,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106066000/",
       "description": "筑波山、カリオンの時計塔、フヨウの花を描く",
-      "dateWarning": null,
-      "name": "明野郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4177",
-      "imageUrl": "assets/stamps/4177.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市海老ケ島１５９７",
-      "addressLabel": "茨城県筑西市海老ケ島１５９７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0098",
@@ -3502,18 +3687,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106113000/",
       "description": "筑波山、岡田寒泉の碑、フヨウの花を描く",
-      "dateWarning": null,
-      "name": "中上野郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4178",
-      "imageUrl": "assets/stamps/4178.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市中上野７１７",
-      "addressLabel": "茨城県筑西市中上野７１７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0099",
@@ -3536,18 +3710,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106150000/",
       "description": "筑波山、石造五輪塔、フヨウの花を描く",
-      "dateWarning": null,
-      "name": "村田郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4179",
-      "imageUrl": "assets/stamps/4179.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市村田１７２８",
-      "addressLabel": "茨城県筑西市村田１７２８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0100",
@@ -3570,18 +3733,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106388000/",
       "description": "波崎砂丘、波崎海岸砂丘植物公園、太平洋の風景、ウィンドサーフィン、センリョウの花を描く",
-      "dateWarning": null,
-      "name": "別所郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "4150",
-      "imageUrl": "assets/stamps/4150.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県神栖市波崎４７８１−４５",
-      "addressLabel": "茨城県神栖市波崎４７８１−４５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0101",
@@ -3604,18 +3756,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106430000/",
       "description": "独立行政法人情報通信研究機構のパラボラアンテナとナマズを描く",
-      "dateWarning": null,
-      "name": "鹿嶋平井郵便局",
-      "city": "鹿嶋市",
-      "region": "鹿行",
-      "stampId": "4147",
-      "imageUrl": "assets/stamps/4147.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鹿嶋市平井１１２８−１７８",
-      "addressLabel": "茨城県鹿嶋市平井１１２８−１７８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0102",
@@ -3638,18 +3779,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106098000/",
       "description": "筑波山、小見川の風景、別雷神社拝殿、竜の彫刻を描く",
-      "dateWarning": null,
-      "name": "上郷郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4967",
-      "imageUrl": "assets/stamps/4967.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市上郷１３８４−３",
-      "addressLabel": "茨城県つくば市上郷１３８４−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0103",
@@ -3672,18 +3802,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106213000/",
       "description": "県自然博物館、菅生沼、自然界の動植物、宇宙を描く",
-      "dateWarning": null,
-      "name": "七郷郵便局",
-      "city": "坂東市",
-      "region": "県西",
-      "stampId": "4191",
-      "imageUrl": "assets/stamps/4191.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県坂東市大崎１３３４−３４",
-      "addressLabel": "茨城県坂東市大崎１３３４−３４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0104",
@@ -3706,18 +3825,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106111000/",
       "description": "小田城址、筑波山を描く",
-      "dateWarning": null,
-      "name": "つくば小田郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4206",
-      "imageUrl": "assets/stamps/4206.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市小田２９４６−１",
-      "addressLabel": "茨城県つくば市小田２９４６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0105",
@@ -3740,18 +3848,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106327000/",
       "description": "峰寺山両光院、立木観音像、ハンググライダーを描く",
-      "dateWarning": null,
-      "name": "葦穂郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4160",
-      "imageUrl": "assets/stamps/4160.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市芦穂中部小屋６６−３",
-      "addressLabel": "茨城県石岡市芦穂中部小屋６６−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0106",
@@ -3774,18 +3871,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106331000/",
       "description": "うぐいすの里、岩船神社内のフジの群生を描く",
-      "dateWarning": null,
-      "name": "岩船郵便局",
-      "city": "城里町",
-      "region": "県央",
-      "stampId": "4117",
-      "imageUrl": "assets/stamps/4117.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡城里町孫根４６１−５",
-      "addressLabel": "茨城県東茨城郡城里町孫根４６１−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0107",
@@ -3808,18 +3894,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106060000/",
       "description": "筑波山、ホオズキ、八俣送信所鉄塔を描く",
-      "dateWarning": null,
-      "name": "三和郵便局",
-      "city": "古河市",
-      "region": "県西",
-      "stampId": "4960",
-      "imageUrl": "assets/stamps/4960.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県古河市仁連１９１４",
-      "addressLabel": "茨城県古河市仁連１９１４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0108",
@@ -3842,18 +3917,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106103000/",
       "description": "思案橋、静結びの柳、利根川、筑波山を描く",
-      "dateWarning": null,
-      "name": "総和郵便局",
-      "city": "古河市",
-      "region": "県西",
-      "stampId": "4968",
-      "imageUrl": "assets/stamps/4968.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県古河市下大野７４４−４",
-      "addressLabel": "茨城県古河市下大野７４４−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0109",
@@ -3876,18 +3940,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106160000/",
       "description": "眉山、白山、御前山の遠望、那珂川、大桂大橋、アユ、釣り人を描く",
-      "dateWarning": null,
-      "name": "阿波山郵便局",
-      "city": "城里町",
-      "region": "県央",
-      "stampId": "4114",
-      "imageUrl": "assets/stamps/4114.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡城里町阿波山１０２０−１",
-      "addressLabel": "茨城県東茨城郡城里町阿波山１０２０−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0110",
@@ -3910,18 +3963,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106055000/",
       "description": "筑波山、長塚節の銅像、町のシンボル・地域交流センター(豊田城)を描く",
-      "dateWarning": null,
-      "name": "石下郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4180",
-      "imageUrl": "assets/stamps/4180.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市新石下４５２７",
-      "addressLabel": "茨城県常総市新石下４５２７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0111",
@@ -3944,18 +3986,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106053000/",
       "description": "筑波山、息栖神社、息栖大橋を描く",
-      "dateWarning": null,
-      "name": "萩原郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "4148",
-      "imageUrl": "assets/stamps/4148.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県神栖市萩原９７０−１",
-      "addressLabel": "茨城県神栖市萩原９７０−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0112",
@@ -3978,18 +4009,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106174000/",
       "description": "伝説の巨人像ダイダラボウ、L.E.Cセンター、大串貝塚を描く",
-      "dateWarning": null,
-      "name": "大場郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4109",
-      "imageUrl": "assets/stamps/4109.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市大場町３−２２",
-      "addressLabel": "茨城県水戸市大場町３−２２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0113",
@@ -4012,18 +4032,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106204000/",
       "description": "花立山星まつり観測広場とシイタケを描く",
-      "dateWarning": null,
-      "name": "檜沢郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4246",
-      "imageUrl": "assets/stamps/4246.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市下檜沢１７１１−１",
-      "addressLabel": "茨城県常陸大宮市下檜沢１７１１−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0114",
@@ -4046,18 +4055,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106027000/",
       "description": "天然港の平潟港、船、島を描く",
-      "dateWarning": null,
-      "name": "平潟郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4212",
-      "imageUrl": "assets/stamps/4212.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市平潟町５１６",
-      "addressLabel": "茨城県北茨城市平潟町５１６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0115",
@@ -4080,18 +4078,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106045000/",
       "description": "国営ひたち海浜公園の西口ゲート、オオウメガサソウ、石碑を描く",
-      "dateWarning": null,
-      "name": "馬渡郵便局",
-      "city": "ひたちなか市",
-      "region": "県央",
-      "stampId": "4136",
-      "imageUrl": "assets/stamps/4136.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県ひたちなか市馬渡３４２８−４",
-      "addressLabel": "茨城県ひたちなか市馬渡３４２８−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0116",
@@ -4114,18 +4101,7 @@
       "coordinateNote": "現在の郵便局の位置。風景印カタログの記載住所とは異なります",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106347000/",
       "description": "国営ひたち海浜公園の南口ゲート、ハマギク、石碑を描く",
-      "dateWarning": null,
-      "name": "那珂湊相金郵便局",
-      "city": "ひたちなか市",
-      "region": "県央",
-      "stampId": "4137",
-      "imageUrl": "assets/stamps/4137.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県ひたちなか市相金町26-7",
-      "addressLabel": "茨城県ひたちなか市相金町26-7",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0117",
@@ -4148,18 +4124,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106067000/",
       "description": "百観音自然公園の観音像、カリオンの鐘、投網漁、アユを描く",
-      "dateWarning": null,
-      "name": "緒川郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4241",
-      "imageUrl": "assets/stamps/4241.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市上小瀬２１１４−１",
-      "addressLabel": "茨城県常陸大宮市上小瀬２１１４−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0118",
@@ -4182,18 +4147,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106246000/",
       "description": "筑波山、小幡北山遺跡、ひょっとこばやし、小幡城址を描く",
-      "dateWarning": null,
-      "name": "上野合郵便局",
-      "city": "茨城町",
-      "region": "県央",
-      "stampId": "4111",
-      "imageUrl": "assets/stamps/4111.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡茨城町小幡１４９８−２",
-      "addressLabel": "茨城県東茨城郡茨城町小幡１４９８−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0119",
@@ -4216,18 +4170,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106037000/",
       "description": "筑波山、上野沼、妙法寺の山門を描く",
-      "dateWarning": null,
-      "name": "岩瀬郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4955",
-      "imageUrl": "assets/stamps/4955.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市岩瀬７１−１",
-      "addressLabel": "茨城県桜川市岩瀬７１−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0120",
@@ -4250,18 +4193,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106089000/",
       "description": "水郷筑波国定公園、椎名家住宅、レンコンを描く",
-      "dateWarning": null,
-      "name": "出島郵便局",
-      "city": "かすみがうら市",
-      "region": "県南",
-      "stampId": "4201",
-      "imageUrl": "assets/stamps/4201.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県かすみがうら市深谷１３６５−１",
-      "addressLabel": "茨城県かすみがうら市深谷１３６５−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0121",
@@ -4284,18 +4216,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106237000/",
       "description": "霞ヶ浦の風物詩の帆引船、霞ヶ浦から見た筑波山を描く",
-      "dateWarning": null,
-      "name": "牛渡郵便局",
-      "city": "かすみがうら市",
-      "region": "県南",
-      "stampId": "4203",
-      "imageUrl": "assets/stamps/4203.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県かすみがうら市牛渡１９３６−１",
-      "addressLabel": "茨城県かすみがうら市牛渡１９３６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0122",
@@ -4318,18 +4239,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106168000/",
       "description": "霞ヶ浦、アジサイ、古墳を描く",
-      "dateWarning": null,
-      "name": "安飾郵便局",
-      "city": "かすみがうら市",
-      "region": "県南",
-      "stampId": "4202",
-      "imageUrl": "assets/stamps/4202.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県かすみがうら市安食９８９−１",
-      "addressLabel": "茨城県かすみがうら市安食９８９−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0123",
@@ -4352,18 +4262,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106297000/",
       "description": "かすみがうら市筑波山と志士庫クリを描く",
-      "dateWarning": null,
-      "name": "志士庫郵便局",
-      "city": "かすみがうら市",
-      "region": "県南",
-      "stampId": "4204",
-      "imageUrl": "assets/stamps/4204.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県かすみがうら市宍倉１７９９−７",
-      "addressLabel": "茨城県かすみがうら市宍倉１７９９−７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0124",
@@ -4386,18 +4285,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106050000/",
       "description": "土浦市南玄関風景、ヨシキリ、ポプラ、一里塚を描く",
-      "dateWarning": null,
-      "name": "土浦南郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4198",
-      "imageUrl": "assets/stamps/4198.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市荒川沖東２−２５−１",
-      "addressLabel": "茨城県土浦市荒川沖東２−２５−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0125",
@@ -4420,18 +4308,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106417000/",
       "description": "陸前浜街道の旧宿、氏神様、ヨシキリを描く",
-      "dateWarning": null,
-      "name": "土浦荒川沖郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4199",
-      "imageUrl": "assets/stamps/4199.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市荒川沖西１−１８−１１",
-      "addressLabel": "茨城県土浦市荒川沖西１−１８−１１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0126",
@@ -4454,18 +4331,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106049000/",
       "description": "陸平貝塚から出土した壺、美浦トレーニングセンターの馬、霞ヶ浦の帆びき網漁を描く",
-      "dateWarning": null,
-      "name": "美浦郵便局",
-      "city": "美浦村",
-      "region": "県南",
-      "stampId": "4209",
-      "imageUrl": "assets/stamps/4209.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県稲敷郡美浦村宮地１２１１−１０",
-      "addressLabel": "茨城県稲敷郡美浦村宮地１２１１−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0127",
@@ -4488,18 +4354,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106149000/",
       "description": "旧茨城県立太田中学校講堂を描く",
-      "dateWarning": null,
-      "name": "常陸太田栄町郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4233",
-      "imageUrl": "assets/stamps/4233.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市栄町１２７−１",
-      "addressLabel": "茨城県常陸太田市栄町１２７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0128",
@@ -4522,18 +4377,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106070000/",
       "description": "八幡宮本殿、お葉付イチョウ、水戸芸術館のシンボルタワーを描く",
-      "dateWarning": null,
-      "name": "水戸末広郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4099",
-      "imageUrl": "assets/stamps/4099.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市末広町１−５−３８",
-      "addressLabel": "茨城県水戸市末広町１−５−３８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0129",
@@ -4556,18 +4400,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106077000/",
       "description": "二ツ島、野口雨情の生家、、七つの子歌碑を描く",
-      "dateWarning": null,
-      "name": "北茨城郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4965",
-      "imageUrl": "assets/stamps/4965.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市磯原町磯原１−１２０",
-      "addressLabel": "茨城県北茨城市磯原町磯原１−１２０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0130",
@@ -4590,18 +4423,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106122000/",
       "description": "水戸森林公園のシンボルの恐竜、大塚池、常磐自動車道水戸インターチェンジを描く",
-      "dateWarning": null,
-      "name": "赤塚郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4969",
-      "imageUrl": "assets/stamps/4969.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市赤塚２−２１２",
-      "addressLabel": "茨城県水戸市赤塚２−２１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0131",
@@ -4624,18 +4446,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106075000/",
       "description": "五水のうちの金性水、シャクナゲの花、八溝山の展望台を描く",
-      "dateWarning": null,
-      "name": "町付郵便局",
-      "city": "大子町",
-      "region": "県北",
-      "stampId": "4226",
-      "imageUrl": "assets/stamps/4226.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県久慈郡大子町町付１１８２−１",
-      "addressLabel": "茨城県久慈郡大子町町付１１８２−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0132",
@@ -4658,18 +4469,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106007000/",
       "description": "渡良瀬川、アシ、釣り舟、大水門北方の日光連山を描く",
-      "dateWarning": null,
-      "name": "古河郵便局",
-      "city": "古河市",
-      "region": "県西",
-      "stampId": "4941",
-      "imageUrl": "assets/stamps/4941.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県古河市桜町１−１０",
-      "addressLabel": "茨城県古河市桜町１−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0133",
@@ -4692,18 +4492,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106073000/",
       "description": "鷲子山上神社、美和ログハウス、三浦スギを描く",
-      "dateWarning": null,
-      "name": "美和郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4243",
-      "imageUrl": "assets/stamps/4243.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市高部５２７１−１２",
-      "addressLabel": "茨城県常陸大宮市高部５２７１−１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0134",
@@ -4726,18 +4515,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106031000/",
       "description": "筑波街道の道標、北条大池、筑波山を描く",
-      "dateWarning": null,
-      "name": "筑波郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4953",
-      "imageUrl": "assets/stamps/4953.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市北条４３４７−６",
-      "addressLabel": "茨城県つくば市北条４３４７−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0135",
@@ -4760,18 +4538,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106036000/",
       "description": "船玉古墳、鬼怒川の清流、鬼怒川大橋、筑波山、ナシを描く",
-      "dateWarning": null,
-      "name": "関城郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4176",
-      "imageUrl": "assets/stamps/4176.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市関本分中１５０−４",
-      "addressLabel": "茨城県筑西市関本分中１５０−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0136",
@@ -4794,18 +4561,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106100000/",
       "description": "笠間焼を外枠とし、稲田の国道五〇号沿いのモニュメント、吾国山を描く",
-      "dateWarning": null,
-      "name": "福原郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4122",
-      "imageUrl": "assets/stamps/4122.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市福原１３３０−６",
-      "addressLabel": "茨城県笠間市福原１３３０−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0137",
@@ -4828,18 +4584,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106118000/",
       "description": "笠間焼を外枠とし、楞厳寺の山門、ヒメハルゼミ、仏頂山を描く",
-      "dateWarning": null,
-      "name": "笠間石井郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4123",
-      "imageUrl": "assets/stamps/4123.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市石井１０９０",
-      "addressLabel": "茨城県笠間市石井１０９０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0138",
@@ -4862,18 +4607,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106133000/",
       "description": "笠間焼を外枠とし、稲田石の採掘場の石切山脈とその碑を描く",
-      "dateWarning": null,
-      "name": "稲田郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4124",
-      "imageUrl": "assets/stamps/4124.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市稲田２３２３−１",
-      "addressLabel": "茨城県笠間市稲田２３２３−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0139",
@@ -4896,18 +4630,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106205000/",
       "description": "笠間焼を外枠とし、飯田ダム、キク、朝房山を描く",
-      "dateWarning": null,
-      "name": "大池田郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4126",
-      "imageUrl": "assets/stamps/4126.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市大橋２１８５−４",
-      "addressLabel": "茨城県笠間市大橋２１８５−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0140",
@@ -4930,18 +4653,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106250000/",
       "description": "笠間焼を外枠とし、登り窯、笠間稲荷本殿、佐白山を描く",
-      "dateWarning": null,
-      "name": "笠間駅前郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4127",
-      "imageUrl": "assets/stamps/4127.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市笠間４３９９−４",
-      "addressLabel": "茨城県笠間市笠間４３９９−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0141",
@@ -4964,18 +4676,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106459000/",
       "description": "笠間焼を外枠とし、笠間日動美術館と野外彫刻庭園の彫刻、ツツジ、佐白山、富士山を描く",
-      "dateWarning": null,
-      "name": "笠間大町郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4131",
-      "imageUrl": "assets/stamps/4131.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市笠間１１５４−２",
-      "addressLabel": "茨城県笠間市笠間１１５４−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0142",
@@ -4998,18 +4699,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106004000/",
       "description": "笠間焼を外枠とし、笠間稲荷本殿、キク、佐伯山、サクラを描く",
-      "dateWarning": null,
-      "name": "笠間郵便局",
-      "city": "笠間市",
-      "region": "県央",
-      "stampId": "4939",
-      "imageUrl": "assets/stamps/4939.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県笠間市笠間１５９３−１１",
-      "addressLabel": "茨城県笠間市笠間１５９３−１１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0143",
@@ -5032,18 +4722,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106109000/",
       "description": "神明社の大ケヤキ、逆井城の石碑、櫓門に橋を描く",
-      "dateWarning": null,
-      "name": "猿島郵便局",
-      "city": "坂東市",
-      "region": "県西",
-      "stampId": "4190",
-      "imageUrl": "assets/stamps/4190.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県坂東市沓掛４９９５−１",
-      "addressLabel": "茨城県坂東市沓掛４９９５−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0144",
@@ -5066,18 +4745,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106301000/",
       "description": "大生神社、ワカサギ捕りの帆引船、北浦湖畔のハクチョウ、筑波山を描く",
-      "dateWarning": null,
-      "name": "大生原郵便局",
-      "city": "潮来市",
-      "region": "鹿行",
-      "stampId": "4144",
-      "imageUrl": "assets/stamps/4144.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県潮来市釜谷２５０−２",
-      "addressLabel": "茨城県潮来市釜谷２５０−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0145",
@@ -5100,18 +4768,7 @@
       "coordinateNote": "一時閉鎖中。国土地理院の施設名検索で確認した旧局所在地",
       "coordinateSourceUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%B0%B4%E6%88%B8%E4%BA%94%E8%BB%92%E7%94%BA%E9%83%B5%E4%BE%BF%E5%B1%80",
       "description": "偕楽園の好文亭、ウメを描く",
-      "dateWarning": null,
-      "name": "水戸五軒町郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4088",
-      "imageUrl": "assets/stamps/4088.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "2026-03-14 一時閉鎖",
-      "status": "2026-03-14 一時閉鎖",
-      "displayAddress": "茨城県水戸市五軒町1-1-10",
-      "addressLabel": "茨城県水戸市五軒町1-1-10",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0146",
@@ -5134,18 +4791,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106238000/",
       "description": "薬王院の三重塔、薬師瑠璃光如来像、加波山を描く",
-      "dateWarning": null,
-      "name": "紫尾郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4165",
-      "imageUrl": "assets/stamps/4165.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市真壁町椎尾１２６１−１",
-      "addressLabel": "茨城県桜川市真壁町椎尾１２６１−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0147",
@@ -5168,18 +4814,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106401000/",
       "description": "加波山たばこ神社のキセル祭り、旗立石の碑を描く",
-      "dateWarning": null,
-      "name": "真壁長岡郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4166",
-      "imageUrl": "assets/stamps/4166.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市真壁町白井５５４−１０",
-      "addressLabel": "茨城県桜川市真壁町白井５５４−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0148",
@@ -5202,18 +4837,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106255000/",
       "description": "中崎家住宅、十一面観音像、カタクリを描く",
-      "dateWarning": null,
-      "name": "鯉淵郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4115",
-      "imageUrl": "assets/stamps/4115.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市鯉淵町１１９２−３",
-      "addressLabel": "茨城県水戸市鯉淵町１１９２−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0149",
@@ -5236,18 +4860,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106056000/",
       "description": "利根川、新利根川橋、川妻穴薬師古墳を描く",
-      "dateWarning": null,
-      "name": "五霞郵便局",
-      "city": "五霞町",
-      "region": "県西",
-      "stampId": "4188",
-      "imageUrl": "assets/stamps/4188.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県猿島郡五霞町元栗橋９６５−１",
-      "addressLabel": "茨城県猿島郡五霞町元栗橋９６５−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0150",
@@ -5270,18 +4883,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106137000/",
       "description": "菅生沼、あすなろの里の長屋門、サクラを描く",
-      "dateWarning": null,
-      "name": "菅生郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4181",
-      "imageUrl": "assets/stamps/4181.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市菅生町１６８９−３",
-      "addressLabel": "茨城県常総市菅生町１６８９−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0151",
@@ -5304,18 +4906,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106194000/",
       "description": "一言主神社本殿とみたまのタケを描く",
-      "dateWarning": null,
-      "name": "小絹郵便局",
-      "city": "つくばみらい市",
-      "region": "県南",
-      "stampId": "4193",
-      "imageUrl": "assets/stamps/4193.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくばみらい市小絹１２１９−１",
-      "addressLabel": "茨城県つくばみらい市小絹１２１９−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0152",
@@ -5338,18 +4929,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106338000/",
       "description": "バラ、名産のナシ、クリ、筑波山を描く",
-      "dateWarning": null,
-      "name": "土浦都和郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4196",
-      "imageUrl": "assets/stamps/4196.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市並木３−２−４８",
-      "addressLabel": "茨城県土浦市並木３−２−４８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0153",
@@ -5372,18 +4952,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106102000/",
       "description": "太々神楽、利根川橋、筑波山、サクラ描く",
-      "dateWarning": null,
-      "name": "古河中田郵便局",
-      "city": "古河市",
-      "region": "県西",
-      "stampId": "4189",
-      "imageUrl": "assets/stamps/4189.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県古河市中田１１７３−５",
-      "addressLabel": "茨城県古河市中田１１７３−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0154",
@@ -5406,18 +4975,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106112000/",
       "description": "多宝塔、マダラ鬼神祭、筑波山を描く",
-      "dateWarning": null,
-      "name": "雨引郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4163",
-      "imageUrl": "assets/stamps/4163.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市本木４４５−２",
-      "addressLabel": "茨城県桜川市本木４４５−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0155",
@@ -5440,18 +4998,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106151000/",
       "description": "鍬の祭、筑波山を描く",
-      "dateWarning": null,
-      "name": "大国郵便局",
-      "city": "桜川市",
-      "region": "県西",
-      "stampId": "4164",
-      "imageUrl": "assets/stamps/4164.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県桜川市大国玉６０１",
-      "addressLabel": "茨城県桜川市大国玉６０１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0156",
@@ -5474,18 +5021,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106329000/",
       "description": "ヤナギ、国田大橋、那珂川のサケを描く",
-      "dateWarning": null,
-      "name": "国田郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4116",
-      "imageUrl": "assets/stamps/4116.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市下国井町３１１−６",
-      "addressLabel": "茨城県水戸市下国井町３１１−６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0157",
@@ -5508,18 +5044,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106052000/",
       "description": "霞が浦大橋と民俗資料館を描く",
-      "dateWarning": null,
-      "name": "田伏郵便局",
-      "city": "かすみがうら市",
-      "region": "県南",
-      "stampId": "4200",
-      "imageUrl": "assets/stamps/4200.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県かすみがうら市田伏１６３３−１",
-      "addressLabel": "茨城県かすみがうら市田伏１６３３−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0158",
@@ -5542,18 +5067,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106423000/",
       "description": "原子力研究所の核融合炉JT-60とヒマワリを描く",
-      "dateWarning": null,
-      "name": "那珂向山郵便局",
-      "city": "那珂市",
-      "region": "県央",
-      "stampId": "4134",
-      "imageUrl": "assets/stamps/4134.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県那珂市向山１２６９−１１",
-      "addressLabel": "茨城県那珂市向山１２６９−１１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0159",
@@ -5576,18 +5090,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106233000/",
       "description": "袋田の滝を描く",
-      "dateWarning": null,
-      "name": "大子袋田郵便局",
-      "city": "大子町",
-      "region": "県北",
-      "stampId": "4228",
-      "imageUrl": "assets/stamps/4228.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県久慈郡大子町袋田１４８６−１",
-      "addressLabel": "茨城県久慈郡大子町袋田１４８６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0160",
@@ -5610,18 +5113,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106298000/",
       "description": "筑波山、羽生家住宅、フラワーパーク、バラ、イチゴを描く",
-      "dateWarning": null,
-      "name": "小桜郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4159",
-      "imageUrl": "assets/stamps/4159.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市月岡４２９",
-      "addressLabel": "茨城県石岡市月岡４２９",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0161",
@@ -5644,18 +5136,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106334000/",
       "description": "観音寺、観世音菩薩立像、筑波山を描く",
-      "dateWarning": null,
-      "name": "下館折本郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4171",
-      "imageUrl": "assets/stamps/4171.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市折本３２２−７５",
-      "addressLabel": "茨城県筑西市折本３２２−７５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0162",
@@ -5678,18 +5159,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106125000/",
       "description": "旧穂積家住宅、丹生神社の棒ささらを描く",
-      "dateWarning": null,
-      "name": "高萩上手綱郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "4214",
-      "imageUrl": "assets/stamps/4214.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県高萩市上手綱６４６−４",
-      "addressLabel": "茨城県高萩市上手綱６４６−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0163",
@@ -5712,18 +5182,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106156000/",
       "description": "天竜渓谷、鍋足山、ヤマメ、ヤマザクラを描く",
-      "dateWarning": null,
-      "name": "里美郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4234",
-      "imageUrl": "assets/stamps/4234.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市小菅町５９６",
-      "addressLabel": "茨城県常陸太田市小菅町５９６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0164",
@@ -5746,18 +5205,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106193000/",
       "description": "長福寺山門、久慈川の流れ、男体山を描く",
-      "dateWarning": null,
-      "name": "上小川郵便局",
-      "city": "大子町",
-      "region": "県北",
-      "stampId": "4227",
-      "imageUrl": "assets/stamps/4227.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県久慈郡大子町頃藤４９３４−１",
-      "addressLabel": "茨城県久慈郡大子町頃藤４９３４−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0165",
@@ -5780,18 +5228,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106140000/",
       "description": "野口雨情の生家、詩にちなむ十五夜の月を描く",
-      "dateWarning": null,
-      "name": "大塚郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4215",
-      "imageUrl": "assets/stamps/4215.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市磯原町大塚２３１３",
-      "addressLabel": "茨城県北茨城市磯原町大塚２３１３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0166",
@@ -5814,18 +5251,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106104000/",
       "description": "上戸の獅子舞と霞ヶ浦の帆引船を描く",
-      "dateWarning": null,
-      "name": "牛堀郵便局",
-      "city": "潮来市",
-      "region": "鹿行",
-      "stampId": "4142",
-      "imageUrl": "assets/stamps/4142.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県潮来市牛堀１２４",
-      "addressLabel": "茨城県潮来市牛堀１２４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0167",
@@ -5848,18 +5274,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106130000/",
       "description": "木造薬師如来坐像、ウメ、フジ、ウグイスを描く",
-      "dateWarning": null,
-      "name": "久米郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4232",
-      "imageUrl": "assets/stamps/4232.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市久米町１５３６",
-      "addressLabel": "茨城県常陸太田市久米町１５３６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0168",
@@ -5882,18 +5297,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106253000/",
       "description": "金剛力士像、ウメ、フジ、ウグイスを描く",
-      "dateWarning": null,
-      "name": "金郷郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4237",
-      "imageUrl": "assets/stamps/4237.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市高柿町１３７−２",
-      "addressLabel": "茨城県常陸太田市高柿町１３７−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0169",
@@ -5916,18 +5320,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106126000/",
       "description": "フラワーパークの大温室、バラの花、筑波山の遠望、カキを描く",
-      "dateWarning": null,
-      "name": "小幡郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4157",
-      "imageUrl": "assets/stamps/4157.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市小幡６９５−３",
-      "addressLabel": "茨城県石岡市小幡６９５−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0170",
@@ -5950,18 +5343,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106068000/",
       "description": "河原子海岸烏帽子岩、常磐自動車道、サクラを描く",
-      "dateWarning": null,
-      "name": "多賀郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4963",
-      "imageUrl": "assets/stamps/4963.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市多賀町１−１１−１０",
-      "addressLabel": "茨城県日立市多賀町１−１１−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0171",
@@ -5984,18 +5366,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106424000/",
       "description": "鹿島神宮楼門、シカを描く",
-      "dateWarning": null,
-      "name": "鹿島神宮前郵便局",
-      "city": "鹿嶋市",
-      "region": "鹿行",
-      "stampId": "4146",
-      "imageUrl": "assets/stamps/4146.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鹿嶋市城山４−２−８",
-      "addressLabel": "茨城県鹿嶋市城山４−２−８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0172",
@@ -6018,18 +5389,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106072000/",
       "description": "久慈川のアユ釣り風景、篭岩山の岩窟、ヤマユリの花を描く",
-      "dateWarning": null,
-      "name": "山方郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4242",
-      "imageUrl": "assets/stamps/4242.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市山方６６７−３",
-      "addressLabel": "茨城県常陸大宮市山方６６７−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0173",
@@ -6052,18 +5412,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106065000/",
       "description": "偕楽園の好文亭、水戸光圀公の銅像、ウメを描く",
-      "dateWarning": null,
-      "name": "水戸大工町郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4098",
-      "imageUrl": "assets/stamps/4098.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市大工町３−１−２２−２",
-      "addressLabel": "茨城県水戸市大工町３−１−２２−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0174",
@@ -6086,18 +5435,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106119000/",
       "description": "小祭礼の祭の風景を描く",
-      "dateWarning": null,
-      "name": "松平郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4231",
-      "imageUrl": "assets/stamps/4231.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市松平町２３２−５",
-      "addressLabel": "茨城県常陸太田市松平町２３２−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0175",
@@ -6120,18 +5458,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106030000/",
       "description": "袋田の滝を描く",
-      "dateWarning": null,
-      "name": "大子郵便局",
-      "city": "大子町",
-      "region": "県北",
-      "stampId": "4952",
-      "imageUrl": "assets/stamps/4952.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県久慈郡大子町大子６７６",
-      "addressLabel": "茨城県久慈郡大子町大子６７６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0176",
@@ -6154,18 +5481,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106063000/",
       "description": "小川芋銭の河童の碑、牛久沼の風景、筑波山を描く",
-      "dateWarning": null,
-      "name": "牛久郵便局",
-      "city": "牛久市",
-      "region": "県南",
-      "stampId": "4962",
-      "imageUrl": "assets/stamps/4962.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県牛久市中央３−５−２",
-      "addressLabel": "茨城県牛久市中央３−５−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0177",
@@ -6188,18 +5504,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106028000/",
       "description": "塚崎の獅子舞、境大橋を描く",
-      "dateWarning": null,
-      "name": "茨城境郵便局",
-      "city": "境町",
-      "region": "県西",
-      "stampId": "4951",
-      "imageUrl": "assets/stamps/4951.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県猿島郡境町９５−１２",
-      "addressLabel": "茨城県猿島郡境町９５−１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0178",
@@ -6222,18 +5527,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106244000/",
       "description": "火消行列、東金砂山、西金砂山を描く",
-      "dateWarning": null,
-      "name": "水府郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4236",
-      "imageUrl": "assets/stamps/4236.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市町田町２１５−１",
-      "addressLabel": "茨城県常陸太田市町田町２１５−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0179",
@@ -6256,18 +5550,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106302000/",
       "description": "鹿島神宮楼門、北浦の帆引船、ハナマスを描く",
-      "dateWarning": null,
-      "name": "荒井郵便局",
-      "city": "鹿嶋市",
-      "region": "鹿行",
-      "stampId": "4145",
-      "imageUrl": "assets/stamps/4145.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鹿嶋市浜津賀３０８−１",
-      "addressLabel": "茨城県鹿嶋市浜津賀３０８−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0180",
@@ -6290,18 +5573,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106110000/",
       "description": "古代人の髪型みづらと住居、筑波山を描く",
-      "dateWarning": null,
-      "name": "藤沢郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4194",
-      "imageUrl": "assets/stamps/4194.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市藤沢１４４３",
-      "addressLabel": "茨城県土浦市藤沢１４４３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0181",
@@ -6324,18 +5596,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106341000/",
       "description": "清瀧寺山門、ヤマツツジ、パープルライン、筑波山を描く",
-      "dateWarning": null,
-      "name": "山ノ荘郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4197",
-      "imageUrl": "assets/stamps/4197.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市永井６８６−１",
-      "addressLabel": "茨城県土浦市永井６８６−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0182",
@@ -6358,18 +5619,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106292000/",
       "description": "馬里が淵、エドヒガンザクラを描く",
-      "dateWarning": null,
-      "name": "高萩島名郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "4217",
-      "imageUrl": "assets/stamps/4217.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県高萩市島名２２５３−１２２",
-      "addressLabel": "茨城県高萩市島名２２５３−１２２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0183",
@@ -6392,18 +5642,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106044000/",
       "description": "牧場の風景、ウシ、ヤマザクラ、葉タバコを描く",
-      "dateWarning": null,
-      "name": "大中郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4230",
-      "imageUrl": "assets/stamps/4230.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市大中町１６４９−２",
-      "addressLabel": "茨城県常陸太田市大中町１６４９−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0184",
@@ -6426,18 +5665,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106032000/",
       "description": "久慈川のアユ釣り、能面、辰ノ口堰を描く",
-      "dateWarning": null,
-      "name": "大宮郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4240",
-      "imageUrl": "assets/stamps/4240.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市東富町６３０",
-      "addressLabel": "茨城県常陸大宮市東富町６３０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0185",
@@ -6460,18 +5688,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106408000/",
       "description": "板谷波山生家、凝霜磁蓮口花瓶、筑波山を描く",
-      "dateWarning": null,
-      "name": "下館横島郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4173",
-      "imageUrl": "assets/stamps/4173.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市横島２２７",
-      "addressLabel": "茨城県筑西市横島２２７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0186",
@@ -6494,18 +5711,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106355000/",
       "description": "下館音頭を踊る姿、筑波山、名産のナシを描く",
-      "dateWarning": null,
-      "name": "下館西方郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4172",
-      "imageUrl": "assets/stamps/4172.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市西方１６９９−１",
-      "addressLabel": "茨城県筑西市西方１６９９−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0187",
@@ -6528,18 +5734,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106289000/",
       "description": "五所神社、虚空蔵菩薩、筑波山を描く",
-      "dateWarning": null,
-      "name": "五所郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4169",
-      "imageUrl": "assets/stamps/4169.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市五所宮３９５−２",
-      "addressLabel": "茨城県筑西市五所宮３９５−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0188",
@@ -6562,18 +5757,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106090000/",
       "description": "鬼怒川の風景と橋、女方遺跡出土の人面土器を描く",
-      "dateWarning": null,
-      "name": "川島郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4167",
-      "imageUrl": "assets/stamps/4167.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市伊佐山１６０",
-      "addressLabel": "茨城県筑西市伊佐山１６０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0189",
@@ -6596,18 +5780,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106236000/",
       "description": "筑波山、羽黒神社、サクラ、絵馬を描く",
-      "dateWarning": null,
-      "name": "下館駅前郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4168",
-      "imageUrl": "assets/stamps/4168.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市丙２１０",
-      "addressLabel": "茨城県筑西市丙２１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0190",
@@ -6630,18 +5803,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106405000/",
       "description": "御船祭の風景を描く",
-      "dateWarning": null,
-      "name": "大津西町郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4219",
-      "imageUrl": "assets/stamps/4219.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市大津町２６３１",
-      "addressLabel": "茨城県北茨城市大津町２６３１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0191",
@@ -6664,18 +5826,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106285000/",
       "description": "竜神ダム、モミジの葉を描く",
-      "dateWarning": null,
-      "name": "高倉郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4238",
-      "imageUrl": "assets/stamps/4238.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市下高倉町５８",
-      "addressLabel": "茨城県常陸太田市下高倉町５８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0192",
@@ -6698,18 +5849,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106444000/",
       "description": "羽黒神社、御輿風景、筑波山を描く",
-      "dateWarning": null,
-      "name": "下館大町郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4174",
-      "imageUrl": "assets/stamps/4174.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市甲１０７",
-      "addressLabel": "茨城県筑西市甲１０７",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0193",
@@ -6732,18 +5872,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106226000/",
       "description": "日立風流物とそれに使用される人形頭を描く",
-      "dateWarning": null,
-      "name": "日立宮田郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4223",
-      "imageUrl": "assets/stamps/4223.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市宮田町３−６−１２",
-      "addressLabel": "茨城県日立市宮田町３−６−１２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0194",
@@ -6766,18 +5895,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106078000/",
       "description": "古徳沼のハクチョウ、静峰ふるさと運動公園のヤエザクラ、静神社を描く",
-      "dateWarning": null,
-      "name": "瓜連郵便局",
-      "city": "那珂市",
-      "region": "県央",
-      "stampId": "4132",
-      "imageUrl": "assets/stamps/4132.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県那珂市瓜連３２１（那珂市役所瓜連支所内）",
-      "addressLabel": "茨城県那珂市瓜連３２１（那珂市役所瓜連支所内）",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0195",
@@ -6800,18 +5918,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106135000/",
       "description": "玉簾の滝、三本杉、特産のシイタケを描く",
-      "dateWarning": null,
-      "name": "中里郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4222",
-      "imageUrl": "assets/stamps/4222.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市下深荻町１９０２",
-      "addressLabel": "茨城県日立市下深荻町１９０２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0196",
@@ -6834,18 +5941,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106442000/",
       "description": "洞峰公園ソーラーハウス、松見公園のタワー、並木大橋、筑波山を描く",
-      "dateWarning": null,
-      "name": "筑波学園郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4973",
-      "imageUrl": "assets/stamps/4973.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市吾妻１−１３−２",
-      "addressLabel": "茨城県つくば市吾妻１−１３−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0197",
@@ -6868,18 +5964,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106076000/",
       "description": "筑波山、間宮林蔵の生家、不動院の三重塔を描く",
-      "dateWarning": null,
-      "name": "伊奈郵便局",
-      "city": "つくばみらい市",
-      "region": "県南",
-      "stampId": "4192",
-      "imageUrl": "assets/stamps/4192.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくばみらい市板橋２７８８",
-      "addressLabel": "茨城県つくばみらい市板橋２７８８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0198",
@@ -6902,18 +5987,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106357000/",
       "description": "日本初の原子炉、記念碑、マツを描く",
-      "dateWarning": null,
-      "name": "原研前郵便局",
-      "city": "東海村",
-      "region": "県央",
-      "stampId": "4133",
-      "imageUrl": "assets/stamps/4133.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県那珂郡東海村村松２２９−１０",
-      "addressLabel": "茨城県那珂郡東海村村松２２９−１０",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0199",
@@ -6936,18 +6010,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106420000/",
       "description": "港公園展望台、鹿島港、コンビナートとタンカーを描く",
-      "dateWarning": null,
-      "name": "神栖郵便局",
-      "city": "神栖市",
-      "region": "鹿行",
-      "stampId": "4972",
-      "imageUrl": "assets/stamps/4972.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県神栖市溝口４９９１",
-      "addressLabel": "茨城県神栖市溝口４９９１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0200",
@@ -6970,18 +6033,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106008000/",
       "description": "筑波山、鬼怒川の豊水橋、釣り人を描く",
-      "dateWarning": null,
-      "name": "水海道郵便局",
-      "city": "常総市",
-      "region": "県西",
-      "stampId": "4942",
-      "imageUrl": "assets/stamps/4942.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常総市水海道諏訪町３２２０−２",
-      "addressLabel": "茨城県常総市水海道諏訪町３２２０−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0201",
@@ -7004,18 +6056,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106018000/",
       "description": "五浦海岸を描く",
-      "dateWarning": null,
-      "name": "大津郵便局",
-      "city": "北茨城市",
-      "region": "県北",
-      "stampId": "4211",
-      "imageUrl": "assets/stamps/4211.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県北茨城市大津町北町３０９８",
-      "addressLabel": "茨城県北茨城市大津町北町３０９８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0202",
@@ -7038,18 +6079,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106022000/",
       "description": "花貫ダムを描く",
-      "dateWarning": null,
-      "name": "高萩郵便局",
-      "city": "高萩市",
-      "region": "県北",
-      "stampId": "4948",
-      "imageUrl": "assets/stamps/4948.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県高萩市高萩１９２９−１６",
-      "addressLabel": "茨城県高萩市高萩１９２９−１６",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0203",
@@ -7072,18 +6102,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106167000/",
       "description": "金砂山、田楽舞を描く",
-      "dateWarning": null,
-      "name": "金砂郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4235",
-      "imageUrl": "assets/stamps/4235.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市下宮河内町８１２−５",
-      "addressLabel": "茨城県常陸太田市下宮河内町８１２−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0204",
@@ -7106,18 +6125,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106039000/",
       "description": "平将門像、国王神社拝殿、菅生沼風景を描く",
-      "dateWarning": null,
-      "name": "岩井郵便局",
-      "city": "坂東市",
-      "region": "県西",
-      "stampId": "4957",
-      "imageUrl": "assets/stamps/4957.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県坂東市岩井４６３５−２",
-      "addressLabel": "茨城県坂東市岩井４６３５−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0205",
@@ -7140,18 +6148,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106023000/",
       "description": "茨城百景大利根の展望の碑、大利根陸橋、ボート、花火を描く",
-      "dateWarning": null,
-      "name": "取手郵便局",
-      "city": "取手市",
-      "region": "県南",
-      "stampId": "4949",
-      "imageUrl": "assets/stamps/4949.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県取手市西２−３７−１",
-      "addressLabel": "茨城県取手市西２−３７−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0206",
@@ -7174,18 +6171,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106003000/",
       "description": "筑波山、土浦城址(亀城)の太鼓楼門、霞ヶ浦に浮かぶヨットを描く",
-      "dateWarning": null,
-      "name": "土浦郵便局",
-      "city": "土浦市",
-      "region": "県南",
-      "stampId": "4938",
-      "imageUrl": "assets/stamps/4938.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県土浦市城北町２−２１",
-      "addressLabel": "茨城県土浦市城北町２−２１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0207",
@@ -7208,18 +6194,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106024000/",
       "description": "筑波山、水郷風景、アヤメを描く",
-      "dateWarning": null,
-      "name": "潮来郵便局",
-      "city": "潮来市",
-      "region": "鹿行",
-      "stampId": "4950",
-      "imageUrl": "assets/stamps/4950.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県潮来市潮来１０３−３",
-      "addressLabel": "茨城県潮来市潮来１０３−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0208",
@@ -7242,18 +6217,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106084000/",
       "description": "涸沼に釣人、「広浦秋の月」の碑を描く",
-      "dateWarning": null,
-      "name": "茨城郵便局",
-      "city": "茨城町",
-      "region": "県央",
-      "stampId": "4966",
-      "imageUrl": "assets/stamps/4966.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県東茨城郡茨城町小堤１０２１−１",
-      "addressLabel": "茨城県東茨城郡茨城町小堤１０２１−１",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0209",
@@ -7276,18 +6240,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106021000/",
       "description": "北浦の釣船、特産のコイ、ハマグリ、鹿島松を描く",
-      "dateWarning": null,
-      "name": "鉾田郵便局",
-      "city": "鉾田市",
-      "region": "鹿行",
-      "stampId": "4947",
-      "imageUrl": "assets/stamps/4947.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県鉾田市鉾田１１１−５",
-      "addressLabel": "茨城県鉾田市鉾田１１１−５",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0210",
@@ -7310,18 +6263,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106081000/",
       "description": "青少年旅行村、那珂川大橋、御前山を描く",
-      "dateWarning": null,
-      "name": "御前山郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4244",
-      "imageUrl": "assets/stamps/4244.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市長倉１０３２",
-      "addressLabel": "茨城県常陸大宮市長倉１０３２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0211",
@@ -7344,18 +6286,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106082000/",
       "description": "那珂川大橋、御前山、アユを描く",
-      "dateWarning": null,
-      "name": "野口郵便局",
-      "city": "常陸大宮市",
-      "region": "県北",
-      "stampId": "4245",
-      "imageUrl": "assets/stamps/4245.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸大宮市野口２０９３−３",
-      "addressLabel": "茨城県常陸大宮市野口２０９３−３",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0212",
@@ -7378,18 +6309,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106010000/",
       "description": "ウメを外枠とし、備前堀にかかる消魂橋、備前堀を作った伊奈備前守忠次の像、ヤナギを描く",
-      "dateWarning": null,
-      "name": "水戸下市郵便局",
-      "city": "水戸市",
-      "region": "県央",
-      "stampId": "4087",
-      "imageUrl": "assets/stamps/4087.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県水戸市紺屋町１３８６−４",
-      "addressLabel": "茨城県水戸市紺屋町１３８６−４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0213",
@@ -7412,18 +6332,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106147000/",
       "description": "筑波山、筑波神社、つくばねを描く",
-      "dateWarning": null,
-      "name": "筑波山郵便局",
-      "city": "つくば市",
-      "region": "県南",
-      "stampId": "4207",
-      "imageUrl": "assets/stamps/4207.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県つくば市筑波８０２",
-      "addressLabel": "茨城県つくば市筑波８０２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0214",
@@ -7446,18 +6355,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106034000/",
       "description": "川尻海岸の風景と鵜を描く",
-      "dateWarning": null,
-      "name": "川尻郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4220",
-      "imageUrl": "assets/stamps/4220.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市川尻町１−３８−１４",
-      "addressLabel": "茨城県日立市川尻町１−３８−１４",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0215",
@@ -7480,18 +6378,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106134000/",
       "description": "送受信用アンテナ、研究所、通信衛星を描く",
-      "dateWarning": null,
-      "name": "十王郵便局",
-      "city": "日立市",
-      "region": "県北",
-      "stampId": "4221",
-      "imageUrl": "assets/stamps/4221.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県日立市十王町友部１２９−８",
-      "addressLabel": "茨城県日立市十王町友部１２９−８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0216",
@@ -7514,18 +6401,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106002000/",
       "description": "中館観音寺客殿、伊佐城址碑、サクラ、筑波山を描く",
-      "dateWarning": null,
-      "name": "下館郵便局",
-      "city": "筑西市",
-      "region": "県西",
-      "stampId": "4937",
-      "imageUrl": "assets/stamps/4937.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県筑西市乙１００８",
-      "addressLabel": "茨城県筑西市乙１００８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0217",
@@ -7548,18 +6424,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106005000/",
       "description": "西山荘、太田落雁の碑、ウメ、ガンを描く",
-      "dateWarning": null,
-      "name": "常陸太田郵便局",
-      "city": "常陸太田市",
-      "region": "県北",
-      "stampId": "4940",
-      "imageUrl": "assets/stamps/4940.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県常陸太田市宮本町２３５２",
-      "addressLabel": "茨城県常陸太田市宮本町２３５２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0218",
@@ -7582,18 +6447,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106009000/",
       "description": "糸つむぎの婦人、つむぎ織の模様を描く",
-      "dateWarning": null,
-      "name": "結城郵便局",
-      "city": "結城市",
-      "region": "県西",
-      "stampId": "4943",
-      "imageUrl": "assets/stamps/4943.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県結城市結城７１９５−２",
-      "addressLabel": "茨城県結城市結城７１９５−２",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     },
     {
       "officeId": "office-0219",
@@ -7616,18 +6470,7 @@
       "coordinateNote": "日本郵便の店舗地図に掲載された位置",
       "coordinateSourceUrl": "https://map.japanpost.jp/p/search/dtl/300106011000/",
       "description": "初代都々一坊扇歌堂、史蹟国分寺の碑、茨城クリを描く",
-      "dateWarning": null,
-      "name": "石岡郵便局",
-      "city": "石岡市",
-      "region": "県南",
-      "stampId": "4944",
-      "imageUrl": "assets/stamps/4944.jpg",
-      "verifiedAt": "2026-10-05",
-      "displayStatus": "",
-      "status": "現行",
-      "displayAddress": "茨城県石岡市府中１−７−２８",
-      "addressLabel": "茨城県石岡市府中１−７−２８",
-      "locationLabel": "位置確認済み"
+      "dateWarning": null
     }
   ]
 }

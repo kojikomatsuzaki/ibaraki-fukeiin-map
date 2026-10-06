@@ -22,17 +22,28 @@
 
 HTML・CSS・JavaScriptによる静的サイトです。GitHub Pagesでは`main`ブランチのルートを公開元にします。ビルド処理やAPIキーは不要です。
 
-- `index.html`：画面
-- `app.js`：地図・検索・絞り込み
-- `style.css`：表示スタイル
-- `data.json`：風景印の掲載情報と座標
+- `source/catalog.json`：風景印と郵便局の正本データ（編集対象）
+- `source/site.json`：公開先・SEO・地図設定の正本
+- `scripts/build_site.py`：正本から全配布物を再生成するビルド
+- `index.html`：地図画面（生成物）
+- `post-offices/`：郵便局一覧（生成物）
+- `print/`：印刷用リスト（生成物）
+- `exports/stamps.csv`：表計算ソフト向けCSV（生成物）
+- `data.json`：地図と各配布物が共有する整形済みデータ（生成物）
 - `assets/stamps/`：風景印画像
 - `assets/ibaraki.geojson`：地理データ
 - `vendor/`：Leaflet 1.9.4
 
+正本を変更したら、次のコマンドでGitHub Pages用の生成物を更新します。Sites版も同じ生成結果を使って公開します。
+
+```sh
+python3 scripts/build_site.py --target github --output .
+python3 -B -m unittest discover -s tests -v
+```
+
 変更を`main`に反映すると、GitHub Pagesが更新されます。背景地図には国土地理院のオンライン地図を使用しています。
 
-`data.json`を更新する際は、`python3 scripts/build_directory.py` で郵便局一覧とサイトマップを再生成し、生成ファイルもコミットします。Pythonは更新作業時のみ必要で、閲覧・配信には不要です。検索エンジンへの登録は[Googleへの登録手順](SEARCH_INDEXING.md)を参照してください。
+Pythonは更新作業時のみ必要で、閲覧・配信には不要です。検索エンジンへの登録は[Googleへの登録手順](SEARCH_INDEXING.md)を参照してください。
 
 ## 出典・権利表記
 
