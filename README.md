@@ -1,5 +1,9 @@
 # 茨城 風景印地図
 
+初回リリース日：2026-10-06 ／ v2.0.1リリース日：2026-10-07 ／ 最終修正日：2026-10-07（日本時間）
+
+制作・運営：Koji Komatsuzaki（こまつざき こうじ）｜連絡先：[GitHub Issues](https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map/issues)
+
 [公開サイト](https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/) · [郵便局一覧](https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/post-offices/) · [リリース](https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map/releases) · [更新履歴](CHANGELOG.md)
 
 茨城県の郵便局にある風景印を、実際の風景印画像で探せる非公式の案内地図です。地図上の画像をクリックすると、日本郵便の各風景印紹介ページが開きます。

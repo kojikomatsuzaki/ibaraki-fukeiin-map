@@ -80,9 +80,14 @@ def _finite_number(value: Any, label: str) -> float:
 def _validate_site_config(config: dict[str, Any]) -> None:
     if not re.fullmatch(r"\d+\.\d+\.\d+", str(config.get("version", ""))):
         raise ValueError("site version must use major.minor.patch")
-    for key in ("title", "prefecture", "pageTitle", "description", "canonicalUrl", "repositoryUrl"):
+    for key in ("title", "prefecture", "pageTitle", "description", "canonicalUrl", "repositoryUrl", "firstReleased", "releasedAt", "contentUpdated"):
         if not isinstance(config.get(key), str) or not config[key]:
             raise ValueError(f"site config requires non-empty {key}")
+    author = config.get("author")
+    if not isinstance(author, dict) or any(not isinstance(author.get(key), str) or not author[key] for key in ("name", "reading", "contactLabel", "contactUrl")):
+        raise ValueError("site config requires author name, reading, contactLabel, and contactUrl")
+    if not author["contactUrl"].startswith("https://"):
+        raise ValueError("author contactUrl must be an https URL")
     if not config["canonicalUrl"].startswith("https://") or not config["canonicalUrl"].endswith("/"):
         raise ValueError("canonicalUrl must be an https URL ending in /")
     targets = config.get("targets")
@@ -333,6 +338,12 @@ def _index_values(config: dict[str, Any], catalog: dict[str, Any], records: list
         "SOURCE_URL": html.escape(catalog["sourceUrl"], quote=True),
         "VERIFIED_AT": html.escape(catalog["verifiedAt"]),
         "CONTENT_UPDATED": html.escape(config["contentUpdated"]),
+        "FIRST_RELEASED": html.escape(config["firstReleased"]),
+        "RELEASED_AT": html.escape(config["releasedAt"]),
+        "AUTHOR_NAME": html.escape(config["author"]["name"]),
+        "AUTHOR_READING": html.escape(config["author"]["reading"]),
+        "AUTHOR_CONTACT_LABEL": html.escape(config["author"]["contactLabel"]),
+        "AUTHOR_CONTACT_URL": html.escape(config["author"]["contactUrl"], quote=True),
         "LOCATION_NOTE": html.escape("日本郵便の店舗地図に掲載された位置を使用します。旧局所在地や概算位置には注記を付けています。"),
         "TARGET_URL": html.escape(target_url, quote=True),
         "REPOSITORY_URL": html.escape(config["repositoryUrl"], quote=True),
@@ -378,6 +389,7 @@ def _data_json(config: dict[str, Any], catalog: dict[str, Any], records: list[di
 def _release(config: dict[str, Any], catalog: dict[str, Any], records: list[dict[str, Any]], target: str, source_revision: str, data_revision: str) -> dict[str, Any]:
     return {
         "version": config["version"], "target": target, "contentUpdated": config["contentUpdated"],
+        "firstReleased": config["firstReleased"], "releasedAt": config["releasedAt"],
         "verifiedAt": catalog["verifiedAt"], "sourceUrl": catalog["sourceUrl"],
         "sourceRevision": source_revision, "dataRevision": data_revision,
         "counts": _record_counts(records, len(catalog["offices"])),

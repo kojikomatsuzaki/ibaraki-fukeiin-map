@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "sourceUrl": "https://www.post.japanpost.jp/enjoy/culture/stamp/fuke/result_pre.php?pref_id=8",
   "verifiedAt": "2026-10-05",
   "contentUpdated": "2026-10-07",
@@ -9,7 +9,7 @@
   "officeCount": 219,
   "activeStampCount": 210,
   "activeOfficeCount": 209,
-  "sourceRevision": "de4a76f11595c539",
+  "sourceRevision": "f9da15cd832c5ecc",
   "dataRevision": "d2f0216546019b46",
   "locationNote": "日本郵便の店舗地図に掲載された位置を使用します。旧局所在地や概算位置には注記を付けています。",
   "records": [

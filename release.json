@@ -1,10 +1,12 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "target": "github",
   "contentUpdated": "2026-10-07",
+  "firstReleased": "2026-10-06",
+  "releasedAt": "2026-10-07",
   "verifiedAt": "2026-10-05",
   "sourceUrl": "https://www.post.japanpost.jp/enjoy/culture/stamp/fuke/result_pre.php?pref_id=8",
-  "sourceRevision": "de4a76f11595c539",
+  "sourceRevision": "f9da15cd832c5ecc",
   "dataRevision": "d2f0216546019b46",
   "counts": {
     "offices": 219,

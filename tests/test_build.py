@@ -82,6 +82,12 @@ class BuildAcceptanceTests(unittest.TestCase):
 
     def test_both_targets_share_data_and_preserve_existing_exceptions(self):
         config, catalog, records = BUILD_SITE.load_catalog(self.root)
+        self.assertEqual(config["version"], "2.0.1")
+        self.assertEqual(config["firstReleased"], "2026-10-06")
+        self.assertEqual(config["releasedAt"], "2026-10-07")
+        self.assertEqual(config["contentUpdated"], "2026-10-07")
+        self.assertEqual(config["author"]["name"], "Koji Komatsuzaki")
+        self.assertEqual(config["author"]["reading"], "こまつざき こうじ")
         self.assertEqual(catalog["schemaVersion"], 2)
         self.assertEqual(len(catalog["offices"]), 219)
         self.assertEqual(len(records), 224)
@@ -110,6 +116,8 @@ class BuildAcceptanceTests(unittest.TestCase):
                 self.assertEqual(release["counts"], EXPECTED_COUNTS)
                 self.assertTrue(release["sourceRevision"])
                 self.assertTrue(release["dataRevision"])
+                self.assertIn("Koji Komatsuzaki", (output / "index.html").read_text(encoding="utf-8"))
+                self.assertIn("v2.0.1リリース日", (output / "index.html").read_text(encoding="utf-8"))
                 self.assertEqual(read_json(output / "data.json")["records"], records)
                 tags = HeadTags((output / "index.html").read_text(encoding="utf-8"))
                 self.assertEqual(tags.canonical, [config["canonicalUrl"]])
