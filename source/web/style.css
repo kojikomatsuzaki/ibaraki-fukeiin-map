@@ -36,3 +36,8 @@ summary:focus-visible{outline:3px solid #087baf;outline-offset:-3px}.site-header
 .office-picker .finder-top{padding-top:12px;padding-bottom:10px}.picker-header{padding-top:12px;padding-bottom:12px}.office-picker .directory-intro{margin-top:8px}.office-picker .results-heading{padding-top:7px;padding-bottom:7px}.picker-hint{margin-top:8px;margin-bottom:8px}.region-accordion>summary{padding-top:12px;padding-bottom:12px;min-height:48px}
 
 .office-picker .picker-hint{margin-top:5px;margin-bottom:5px}.region-accordion>summary{min-height:44px;padding-top:10px;padding-bottom:10px}.picker-actions{padding-top:10px}.picker-actions #apply-selection{margin-bottom:6px}.picker-actions .selection-actions{margin-bottom:5px}
+
+/* About map heading */
+#about .dialog-heading{align-items:flex-start;gap:16px;margin:8px 0 28px}
+#about #about-title{margin:0;color:var(--red);font-family:Arial,Helvetica,sans-serif;font-size:clamp(24px,5.5vw,32px);font-weight:600;letter-spacing:.09em;line-height:1.2;text-wrap:balance}
+#about .dialog-heading button{flex-shrink:0}
