@@ -77,7 +77,7 @@ test('Wakaguri history search exports exactly its one generated CSV row', () => 
   assert.equal(selected.length, 1);
   assert.equal(selected[0].name, '若栗郵便局');
   assert.equal(selected[0].id, '12523');
-  assert.equal(records.filter(record => api.matches(record, {...filters, history: false})).length, 0);
+  assert.equal(records.filter(record => api.matches(record, {...filters, statuses: ['active']})).length, 0);
   const exported = parseCsv(fs.readFileSync(path.join(root, 'exports/stamps.csv'), 'utf8'));
   const idColumn = exported[0].indexOf('風景印ID');
   assert.notEqual(idColumn, -1);

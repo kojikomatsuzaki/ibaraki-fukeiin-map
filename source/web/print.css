@@ -31,3 +31,4 @@ footer{font-size:12px;color:#62737b;overflow-wrap:anywhere}
  tr{break-inside:avoid}th:last-child,td:last-child{display:none}
  a{color:inherit;text-decoration:none}
 }
+.status-filters{border:0;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}.status-filters label{display:flex;gap:5px;align-items:center}.status-filters legend{font-size:12px}header h1{font-size:22px;overflow-wrap:anywhere}header h2{font-size:18px}

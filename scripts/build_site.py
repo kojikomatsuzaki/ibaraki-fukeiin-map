@@ -193,7 +193,8 @@ def _validate_catalog(catalog: dict[str, Any], root: Path, config: dict[str, Any
         record["imageUrl"] = urljoin(config["canonicalUrl"], stamp["image"])
         record["verifiedAt"] = catalog["verifiedAt"]
         record["displayStatus"] = _display_status(stamp)
-        record["status"] = record["displayStatus"] or "現行"
+        record["statusKey"] = "temporary" if office_status == "temporarily-closed" else "ended" if stamp["historical"] else "active"
+        record["status"] = record["displayStatus"] or "取扱中"
         record["displayAddress"] = (stamp.get("address") if stamp.get("coordinateBasis") == "historical-office-location" else stamp.get("currentAddress") or stamp.get("address")) or "住所未確認"
         record["addressLabel"] = "旧所在地" if stamp.get("coordinateBasis") == "historical-office-location" else "現在の所在地"
         record["searchText"] = " ".join(str(value or "") for value in (record["name"], record["city"], stamp.get("address"), stamp.get("currentAddress")))
@@ -292,12 +293,14 @@ def _table_rows(records: list[dict[str, Any]], with_images: bool) -> str:
         if record["historical"]:
             parameters["history"] = "true"
         map_url = "../?" + urlencode(parameters)
-        row = f'<tr class="{status_class}" data-region="{html.escape(record["region"])}" data-historical="{str(record["historical"]).lower()}" data-search="{html.escape(record["searchText"], quote=True)}">'
+        row = f'<tr class="{status_class}" data-id="{html.escape(record["id"])}" data-status="{record["statusKey"]}" data-region="{html.escape(record["region"])}" data-historical="{str(record["historical"]).lower()}" data-search="{html.escape(record["searchText"], quote=True)}">'
         if with_images:
+            row += f'<td><input type="checkbox" data-select-office="{record["officeId"]}" aria-label="{html.escape(record["name"], quote=True)}を選択"></td>'
             row += f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener noreferrer"><img src="../{html.escape(record["image"])}" alt="{html.escape(record["name"])}の風景印" loading="lazy" width="58" height="58"></a></td>'
         row += f'<td><a href="{html.escape(record["detailUrl"], quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(record["name"])}</a><small>{html.escape(record["city"])} / {html.escape(record["region"])} · 印ID {html.escape(record["id"])}</small></td>'
         row += '<td class="address-notes">' + _address_notes(record) + '</td>'
-        row += f'<td><a class="map-link" href="{html.escape(map_url, quote=True)}">地図で見る</a></td></tr>'
+        apple_url = 'https://maps.apple.com/?' + urlencode({'ll':f'{record["lat"]},{record["lng"]}', 'q':record['name']})
+        row += f'<td><a class="map-link" href="{html.escape(map_url, quote=True)}">地図で見る</a><br><a href="{html.escape(apple_url, quote=True)}" target="_blank" rel="noopener noreferrer">Apple Mapsで開く</a></td></tr>'
         rows.append(row)
     return "\n".join(rows)
 
@@ -333,6 +336,8 @@ def _index_values(config: dict[str, Any], catalog: dict[str, Any], records: list
         "EYEBROW": html.escape(config["eyebrow"]),
         "PREFECTURE": html.escape(config["prefecture"]),
         "REGION_BUTTONS": "".join(region_buttons),
+        "STATUS_FILTERS": '<fieldset class="status-filters"><legend>風景印の取扱状況</legend>' + ''.join(f'<label><input type="checkbox" data-status-filter value="{key}"{" checked" if key == "active" else ""}> {label}</label>' for key, label in (("active", "取扱中"), ("ended", "取扱終了（廃止・閉鎖）"), ("temporary", "一時閉鎖"))) + '</fieldset>',
+        "EXPORT_TOOLS": '<section class="export-tools" aria-label="選択した郵便局を書き出す"><div class="selection-actions"><strong id="selected-count" role="status" aria-live="polite">0局を選択</strong><button id="select-visible" type="button" disabled>表示中を全選択</button><button id="clear-selection" type="button" disabled>選択を解除</button></div><div class="export-buttons"><span>選択した局を保存</span><button data-export-format="kml" disabled>KML</button><button data-export-format="gpx" disabled>GPX</button><button data-export-format="csv" disabled>CSV</button></div><details><summary>保存形式・使い方</summary><p>KML：Google マイマップ・GIS向け。GPX：地点の取り込みに対応するGPS機器向け（機種によって異なります）。CSV：表計算向け。巡回ルートは含みません。</p><p>郵便局名・住所・緯度経度（WGS84）・取扱状況・公式紹介URL・データ確認日・位置注記を保存します。旧所在地や概算位置は注記で区別します。取り込み先によって、一部の情報が表示されない場合があります。</p><p>選択は検索・絞り込みを変えても保持します。ページを移動・再読み込みすると解除されます。Apple Mapsは各局のリンクから開けます。</p></details></section>',
         "COVERAGE": html.escape(coverage),
         "ACTIVE_COVERAGE": html.escape(f'通常表示は現行{counts["activeStamps"]}件（{counts["activeOffices"]}局）'),
         "SOURCE_URL": html.escape(catalog["sourceUrl"], quote=True),
@@ -360,7 +365,7 @@ def _index_values(config: dict[str, Any], catalog: dict[str, Any], records: list
 def _config_js(config: dict[str, Any], catalog: dict[str, Any], records: list[dict[str, Any]], target: str, source_revision: str, data_revision: str) -> str:
     counts = _record_counts(records, len(catalog["offices"]))
     value = {
-        "version": config["version"], "target": target, "canonicalUrl": config["canonicalUrl"],
+        "version": config["version"], "title": config["title"], "target": target, "canonicalUrl": config["canonicalUrl"],
         "targetUrl": config["targets"].get(target, config["targets"]["github"])["url"],
         "regions": [region["name"] for region in config["regions"]],
         "boundaryAsset": config["boundaryAsset"],
@@ -416,7 +421,7 @@ def build(root: Path | str, output: Path | str, target: str = "github") -> dict[
     _copy_public_assets(root, output)
     template = (root / "source/web/index.html").read_text(encoding="utf-8")
     _write(output / "index.html", _render_tokens(template, _index_values(config, catalog, records, target, source_revision, data_revision)))
-    for filename in ("app.js", "style.css", "directory.css", "catalog-view.js", "print.css", "print.js"):
+    for filename in ("app.js", "style.css", "directory.css", "catalog-view.js", "export.js", "print.css", "print.js"):
         _write(output / filename, (root / "source/web" / filename).read_bytes())
     _write(output / "config.js", _config_js(config, catalog, records, target, source_revision, data_revision))
     _write(output / "data.json", _data_json(config, catalog, records, source_revision, data_revision))

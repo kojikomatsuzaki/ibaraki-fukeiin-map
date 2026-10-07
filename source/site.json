@@ -1,19 +1,19 @@
 {
-  "version": "2.0.1",
+  "version": "2.1.0",
   "firstReleased": "2026-10-06",
-  "releasedAt": "2026-10-07",
-  "contentUpdated": "2026-10-07",
+  "releasedAt": "2026-10-08",
+  "contentUpdated": "2026-10-08",
   "author": {
     "name": "Koji Komatsuzaki",
     "reading": "こまつざき こうじ",
     "contactLabel": "GitHub Issues",
     "contactUrl": "https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map/issues"
   },
-  "title": "茨城 風景印地図",
+  "title": "茨城県 風景印地図（Ibaraki Scenic Postmarks Map）",
   "prefecture": "茨城県",
   "eyebrow": "IBARAKI STAMP ATLAS",
-  "pageTitle": "茨城県の風景印マップ｜郵便局を地図で探す",
-  "description": "茨城県の風景印を地図で探す。風景印の画像・郵便局の一覧・CSV・印刷用リストを、同じ確認済みデータから提供します。",
+  "pageTitle": "茨城県 風景印地図（Ibaraki Scenic Postmarks Map）",
+  "description": "茨城県の風景印を地図で探せる非公式サイト。郵便局名・地域・取扱状況で検索し、選んだ郵便局をKML・GPX・CSVで保存できます。",
   "canonicalUrl": "https://kojikomatsuzaki.github.io/ibaraki-fukeiin-map/",
   "targets": {
     "github": {
