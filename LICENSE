@@ -1,0 +1,38 @@
+# ライセンスと適用範囲
+
+Copyright (c) 2026 Koji Komatsuzaki
+
+このリポジトリには、以下の異なるライセンスの対象が含まれます。
+リポジトリ全体・すべてのデータや画像に一律の許諾を与えるものではありません。
+
+## 自作コード：MIT
+
+当方が権利を有する scripts/、tests/、source/web/ 内のプログラム、HTMLテンプレート、CSS、
+およびそれらから生成される自作コード部分には LICENSE-MIT のMITライセンスを適用します。
+HTMLに含まれる説明文等は下記CC BY 4.0、第三者素材は対象外です。
+
+## 自作の説明文・資料・データ編集成果：CC BY 4.0
+
+当方が権利を有する README.md、CHANGELOG.md、SEARCH_INDEXING.md、サイトの説明文、
+source/site.json の自作内容、および source/catalog.json・data.json・CSV等のデータの
+選択・配列・編集に関する当方の権利がある部分は、Creative Commons Attribution 4.0
+International (CC BY 4.0) の下で提供します。
+
+ライセンス本文：https://creativecommons.org/licenses/by/4.0/legalcode
+日本語の概要：https://creativecommons.org/licenses/by/4.0/deed.ja
+
+帰属表示：Koji Komatsuzaki
+作品・ソース：https://github.com/kojikomatsuzaki/ibaraki-fukeiin-map
+ライセンスへのリンクを添え、変更した場合はその旨を明示してください。
+第三者の権利、単なる事実に当方の独占的権利を主張するものではありません。
+
+## 対象外
+
+- assets/stamps/ の風景印画像、日本郵便の画像・掲載情報
+- assets/ibaraki.geojson の元となる第三者の地理データ
+- vendor/ のライブラリと関連素材
+- 背景地図のタイルおよびその他の第三者素材
+
+風景印画像の権利は、日本郵便株式会社その他の権利者に帰属します。
+第三者の素材は各権利者の条件に従ってください。THIRD_PARTY_NOTICES.md を参照。
+本リポジトリの公開・ライセンス表示は、第三者素材の再利用許諾を意味しません。

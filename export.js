@@ -40,7 +40,7 @@
   };
   const csvText = points => '\ufeff' + [fields.map(([,label]) => csvCell(label)).join(','), ...points.map(p => fields.map(([key]) => csvCell(p[key])).join(','))].join('\r\n') + '\r\n';
   const appleUrl = record => 'https://maps.apple.com/?' + new URLSearchParams({ll:record.lat + ',' + record.lng, q:record.name}).toString();
-  function create(records, visibleRecords) {
+  function create(records, visibleRecords, onChange = () => {}) {
     const selected = new Set();
     const count = document.getElementById('selected-count');
     const update = () => {
@@ -50,6 +50,7 @@
       document.querySelectorAll('[data-select-office]').forEach(input => {input.checked = selected.has(input.dataset.selectOffice);});
       document.querySelectorAll('[data-export-format], #clear-selection').forEach(button => {button.disabled = !selected.size;});
       document.getElementById('select-visible').disabled = !visible.size;
+      onChange(selected);
     };
     document.addEventListener('change', event => {
       const input = event.target.closest('[data-select-office]');

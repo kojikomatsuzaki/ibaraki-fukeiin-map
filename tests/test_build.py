@@ -82,7 +82,7 @@ class BuildAcceptanceTests(unittest.TestCase):
 
     def test_both_targets_share_data_and_preserve_existing_exceptions(self):
         config, catalog, records = BUILD_SITE.load_catalog(self.root)
-        self.assertEqual(config["version"], "2.1.0")
+        self.assertEqual(config["version"], "2.2.0")
         self.assertEqual(config["firstReleased"], "2026-10-06")
         self.assertEqual(config["releasedAt"], "2026-10-08")
         self.assertEqual(config["contentUpdated"], "2026-10-08")
@@ -117,7 +117,7 @@ class BuildAcceptanceTests(unittest.TestCase):
                 self.assertTrue(release["sourceRevision"])
                 self.assertTrue(release["dataRevision"])
                 self.assertIn("Koji Komatsuzaki", (output / "index.html").read_text(encoding="utf-8"))
-                self.assertIn("v2.1.0リリース日", (output / "index.html").read_text(encoding="utf-8"))
+                self.assertIn("v2.2.0リリース日", (output / "index.html").read_text(encoding="utf-8"))
                 self.assertEqual(read_json(output / "data.json")["records"], records)
                 for page in ("index.html", "post-offices/index.html", "print/index.html"):
                     page_text = (output / page).read_text(encoding="utf-8")
